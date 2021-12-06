@@ -63,11 +63,11 @@ public class TabuleiroController : MonoBehaviour
             else {
                 int temp = (int)(nEventos/max);
                 for(int j=1;j<=max; j++) {
-                    int r = Random.Range(1, temp+1);
+                    int r = Random.Range(1, temp);
                     int n = ((r+bias)+(temp*(j-1)))+(nEventos*(i-1));
                     iEventos.Add( n );
 
-                    if (r == temp) bias = 1;
+                    if (r == temp-1) bias = 1;
                     else bias = 0;
                 }
             }

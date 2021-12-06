@@ -50,7 +50,6 @@ public class EventosController : MonoBehaviour
             default:
                 break;
         }
-
     }
 
     // quando o jogador passa por cima do tile

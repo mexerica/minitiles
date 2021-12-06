@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 357150155}
   m_Layer: 0
   m_Name: ColliderMap
-  m_TagString: Untagged
+  m_TagString: Tabuleiro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -388,7 +388,7 @@ GameObject:
   - component: {fileID: 552636736}
   m_Layer: 0
   m_Name: eventosMap
-  m_TagString: Untagged
+  m_TagString: Tabuleiro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -726,7 +726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1898357264}
-  runSpeed: 20
+  runSpeed: 15
 --- !u!114 &1898357264
 MonoBehaviour:
   m_ObjectHideFlags: 0
