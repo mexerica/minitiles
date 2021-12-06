@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a13f7ffbe39ac23459beec43a5ef4706
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - tilemap: {instanceID: 0}
+  - collidermap: {instanceID: 0}
+  - iniTile: {fileID: 11400000, guid: 8fa774ef50f4f56459ca9de6535b3c32, type: 2}
+  - caminhoTile: {fileID: 11400000, guid: eb87540d5ef061349b80d50b34175087, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
