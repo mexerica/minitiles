@@ -41,10 +41,10 @@ public class EventosController : MonoBehaviour
                 tilemapa.SetTile(evento.posicao, veioTile);
                 break;
             case 4:
-                tilemapa.SetTile(evento.posicao, veioTile);
+                System.Diagnostics.Process.Start("pesquepague.exe");
                 break;
             case 5:
-                tilemapa.SetTile(evento.posicao, veioTile);
+                System.Diagnostics.Process.Start("navinha.tic.exe");
                 break;
             // chegar no final
             default:

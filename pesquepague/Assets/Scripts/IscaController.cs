@@ -40,7 +40,7 @@ public class IscaController : MonoBehaviour
     }
 
     public void Carretar() {
-        corpo.AddForce( new Vector2(5f, 1f) );
+        corpo.AddForce( new Vector2(10f, 1f) );
     }
 
     public void GuardarIsca() {

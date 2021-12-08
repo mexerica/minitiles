@@ -193,6 +193,7 @@ public class TabuleiroController : MonoBehaviour
         GerarTabuleiro( tiles, iEventos );
         GerarParedes( tiles );
 
+        Debug.Log(Application.dataPath);
     }
 
 }
