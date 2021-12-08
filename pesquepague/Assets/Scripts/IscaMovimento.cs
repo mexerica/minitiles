@@ -4,31 +4,30 @@ public class IscaMovimento : MonoBehaviour
 {
     public IscaController controller;
 
-    [Range(1f, 75f)] public float forsa = 75f;
-
     public bool isLansada = false;
-
-    float horizontalMove = 0f;
 
     void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        horizontalMove = Input.GetAxisRaw("Horizontal") * forsa;
-
-    }
-
-    void FixedUpdate() {
-        if ( horizontalMove < 0 && isLansada == false) {
-            controller.LansarIsca(horizontalMove);
-            isLansada = true;
+    void Update() {
+        if (isLansada == false) {
+            if ( Input.GetKeyDown("left") ) {
+                controller.EscolherForsa();
+            }
+            else if (Input.GetKeyUp("left")) {
+                controller.LansarIsca();
+                isLansada = true;
+            }
         }
-        else if (horizontalMove > 0 && controller.isUnderAgua) {
+        else if (Input.GetKey("right")
+                 && controller.isUnderAgua
+                 && !controller.isFisgando) {
             controller.Carretar();
+        }
+        else if (Input.GetKeyDown("right") && controller.isFisgando) {
+            controller.ChecarAlvo();
         }
     }
 }

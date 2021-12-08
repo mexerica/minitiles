@@ -16,6 +16,9 @@ public class AguaController : MonoBehaviour
                 isca.GuardarIsca();
             }
         }
+        else if (outro.tag == "Peixe") {
+            outro.GetComponent<PeixeController>().Flip();
+        }
     }
 
     void Start() {
