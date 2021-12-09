@@ -1,0 +1,1327 @@
+ctjsVersion: 1.7.0
+notes: /* empty */
+libs:
+  place:
+    gridX: 1024
+    gridY: 1024
+  fittoscreen:
+    mode: scaleFit
+  mouse: {}
+  keyboard: {}
+  keyboard.polyfill: {}
+  sound.howler: {}
+textures:
+  - name: pixil-frame-0_(9)
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 30.75
+      - 34.25
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: i5229683c-dde6-4980-bd58-6078a1f8761e.png
+    shape: strip
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: 5229683c-dde6-4980-bd58-6078a1f8761e
+    padding: 1
+    source: 'C:\Users\flaud\Downloads\pixil-frame-0 (9).png'
+    stripPoints:
+      - x: -4.333333333333333
+        'y': -6.666666666666668
+      - x: -0.9166666666666667
+        'y': -3.0833333333333344
+      - x: 3.4166666666666643
+        'y': -4.249999999999998
+      - x: 6.666666666666668
+        'y': -0.5
+      - x: 8.083333333333336
+        'y': 2.083333333333333
+      - x: 6
+        'y': 6
+      - x: 1.083333333333331
+        'y': 6.749999999999997
+      - x: -3.25
+        'y': 6
+      - x: -5.083333333333332
+        'y': 1.75
+      - x: -3.0833333333333335
+        'y': -1.7499999999999976
+      - x: -7.249999999999999
+        'y': -4.749999999999999
+      - x: -9.25
+        'y': -8.75
+    closedStrip: true
+    lastmod: 1638989616060
+  - name: pixil-frame-0_(10)
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 31
+      - 35
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: ief03ebf3-d0bb-42ba-a26e-1933cc67d083.png
+    shape: strip
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: ef03ebf3-d0bb-42ba-a26e-1933cc67d083
+    padding: 1
+    source: 'C:\Users\flaud\Downloads\pixil-frame-0 (10).png'
+    stripPoints:
+      - x: 1
+        'y': -3
+      - x: 3.3333333333333357
+        'y': -3.1666666666666665
+      - x: 6.333333333333332
+        'y': -0.8333333333333339
+      - x: 7.833333333333333
+        'y': 2.5
+      - x: 6
+        'y': 7.166666666666668
+      - x: 2.1666666666666643
+        'y': 7.166666666666669
+      - x: -2.166666666666668
+        'y': 6.5
+      - x: -4.166666666666668
+        'y': 2.6666666666666643
+      - x: -3.833333333333335
+        'y': -0.5
+      - x: -5.666666666666666
+        'y': -4.666666666666665
+      - x: -10.333333333333334
+        'y': -7.500000000000001
+      - x: -8
+        'y': -8.666666666666666
+      - x: -2.666666666666668
+        'y': -3.3333333333333335
+    closedStrip: true
+    lastmod: 1638989670978
+  - name: pixil-frame-0_(11)
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 31.5
+      - 34.25
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: i67443382-3016-441c-b21d-9835bd1b1c26.png
+    shape: strip
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: 67443382-3016-441c-b21d-9835bd1b1c26
+    padding: 1
+    source: 'C:\Users\flaud\Downloads\pixil-frame-0 (11).png'
+    r: 32
+    stripPoints:
+      - x: 0.375
+        'y': -8.25
+      - x: 6.875
+        'y': -5.25
+      - x: 8.25
+        'y': -0.125
+      - x: 4.625
+        'y': 5.625
+      - x: 0.5
+        'y': 7.125
+      - x: -4.375
+        'y': 5.125
+      - x: -8.125
+        'y': 0.125
+      - x: -6.875
+        'y': -3.875
+      - x: -5
+        'y': -7.625
+    closedStrip: true
+    lastmod: 1638989715176
+  - name: r1
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 32
+      - 31.75
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: i39394ac4-95dc-4863-829b-fdf83640bd3b.png
+    shape: strip
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: 39394ac4-95dc-4863-829b-fdf83640bd3b
+    padding: 1
+    source: 'C:\Users\flaud\Downloads\pixil-frame-0 (12).png'
+    stripPoints:
+      - x: -0.5416666666666679
+        'y': 1.1666666666666679
+      - x: 4.25
+        'y': -4
+      - x: 2.375
+        'y': -1
+      - x: 6.375
+        'y': -5.25
+      - x: 10.375
+        'y': -6.5
+      - x: 16.5
+        'y': -3.75
+      - x: 22.625
+        'y': 0.875
+      - x: 23.125
+        'y': 5.375
+      - x: 22.5
+        'y': 13.875
+      - x: 18
+        'y': 18.375
+      - x: 8
+        'y': 22.375
+      - x: -3.125
+        'y': 18.5
+      - x: -6.666666666666665
+        'y': 14.83333333333333
+      - x: -8
+        'y': 9.25
+      - x: -6
+        'y': 2.125
+      - x: -3.416666666666666
+        'y': 3.625
+      - x: -5.041666666666668
+        'y': 6.916666666666668
+    closedStrip: true
+    lastmod: 1639055255204
+  - name: pixil-frame-0_(13)
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 34.5
+      - 35.75
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: i48f8ad9e-b046-477d-8e5b-a0fc857459ee.png
+    shape: strip
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: 48f8ad9e-b046-477d-8e5b-a0fc857459ee
+    padding: 1
+    source: 'C:\Users\flaud\Downloads\pixil-frame-0 (13).png'
+    stripPoints:
+      - x: 11.5
+        'y': -11.375
+      - x: 20.625
+        'y': -3
+      - x: 21
+        'y': 7.25
+      - x: 19.5
+        'y': 14.125
+      - x: 14
+        'y': 16.75
+      - x: 5.625
+        'y': 21.625
+      - x: -3.875
+        'y': 19.125
+      - x: -8.625
+        'y': 16.375
+      - x: -11.875
+        'y': 12.25
+      - x: -12.125
+        'y': 7.625
+      - x: -2.25
+        'y': -4.25
+    closedStrip: true
+    lastmod: 1638990659570
+  - name: r2
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 40
+      - 39.375
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: i5ac38a58-9122-4f57-b200-a3ac60102146.png
+    shape: strip
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: 5ac38a58-9122-4f57-b200-a3ac60102146
+    padding: 1
+    source: 'C:\Users\flaud\Downloads\pixil-frame-0 (14).png'
+    stripPoints:
+      - x: 1.375
+        'y': -13.375
+      - x: 8.125
+        'y': -12.125
+      - x: 13.375
+        'y': -6
+      - x: 14.5
+        'y': 1
+      - x: 14.875
+        'y': 5.5
+      - x: 11.5
+        'y': 10.375
+      - x: 4.125
+        'y': 14.125
+      - x: -0.875
+        'y': 15.625
+      - x: -5.125
+        'y': 15.875
+      - x: -13.625
+        'y': 10.5
+      - x: -16.375
+        'y': 5.375
+      - x: -13.375
+        'y': -1.375
+      - x: -8.625
+        'y': -5.625
+      - x: -2.25
+        'y': -13
+    closedStrip: true
+    lastmod: 1639055564448
+  - name: r1e
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 21.666666666666668
+      - 39.333333333333336
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: i871f891f-c08a-4fd8-ba32-bd2de5de4942.png
+    shape: strip
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: 871f891f-c08a-4fd8-ba32-bd2de5de4942
+    padding: 1
+    source: 'C:\Users\flaud\Downloads\pixil-frame-0 -R(12).png'
+    stripPoints:
+      - x: 0
+        'y': -13.666666666666668
+      - x: 5.458333333333332
+        'y': -12.583333333333336
+      - x: 9.666666666666666
+        'y': -9
+      - x: 12.958333333333332
+        'y': -4.208333333333336
+      - x: 18.666666666666664
+        'y': 4.333333333333334
+      - x: 16.583333333333332
+        'y': 10.041666666666664
+      - x: 12.666666666666668
+        'y': 11.666666666666666
+      - x: 5
+        'y': 16.333333333333332
+      - x: -1.9166666666666679
+        'y': 14.916666666666664
+      - x: -3.291666666666668
+        'y': 12.416666666666664
+      - x: -7
+        'y': 11.333333333333334
+      - x: -12.166666666666668
+        'y': 6.166666666666664
+      - x: -14
+        'y': -2
+      - x: -12.791666666666668
+        'y': -7.208333333333336
+      - x: -8.000000000000002
+        'y': -9.333333333333337
+    closedStrip: true
+    lastmod: 1639055323868
+  - name: r2e
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: i711673ea-7945-4a59-a22a-86720db30b1f.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: 711673ea-7945-4a59-a22a-86720db30b1f
+    padding: 1
+    source: 'C:\Users\flaud\Downloads\pixil-frame-0-R (14).png'
+    lastmod: 1639055570836
+  - name: Wall
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: i68af6d14-9491-4386-ac54-41d3e04515e9.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: 68af6d14-9491-4386-ac54-41d3e04515e9
+    padding: 1
+    source: 'C:\Users\flaud\Downloads\pixil-frame-0 (15).png'
+    lastmod: 1639083017743
+  - name: BrokenWall
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: i7c1d125d-b89d-40e0-8ade-012f7398b3d9.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: 7c1d125d-b89d-40e0-8ade-012f7398b3d9
+    padding: 1
+    source: 'C:\Users\flaud\Downloads\pixil-frame-0 (16).png'
+    lastmod: 1639086011922
+  - name: pixil-frame-0_(17)
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: i479dcd19-b489-4994-ab59-964fd832d885.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: 479dcd19-b489-4994-ab59-964fd832d885
+    padding: 1
+    source: 'C:\Users\flaud\Downloads\pixil-frame-0 (17).png'
+    lastmod: 1639086077725
+  - name: MoreBrokenWall
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: icce5ec9a-fdaf-4d93-8c5d-cc3f74cc6dd6.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: cce5ec9a-fdaf-4d93-8c5d-cc3f74cc6dd6
+    padding: 1
+    source: 'C:\Users\flaud\Downloads\pixil-frame-0 (18).png'
+    lastmod: 1639086098808
+  - name: LessBrokenWall
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: i4639da07-3585-418f-98f0-18c97f8d38aa.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: 4639da07-3585-418f-98f0-18c97f8d38aa
+    padding: 1
+    source: 'C:\Users\flaud\Downloads\pixil-frame-0 (19).png'
+    lastmod: 1639086410381
+  - name: Change
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: i69a06820-f325-4893-9f3e-145792523c13.png
+    shape: rect
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: 69a06820-f325-4893-9f3e-145792523c13
+    padding: 1
+skeletons: []
+types:
+  - name: raquete_1
+    depth: 0
+    oncreate: |-
+      this.ctype = "Player";
+      this.tex = "r1";
+    onstep: |-
+      if (ct.actions.MoveUp.pressed){
+          this.ctype = "PlayerDir";
+      } else if (ct.actions.MoveDown.pressed) {
+          this.ctype = "PlayerEsq";
+      } else if (ct.actions.MoveX.pressed){
+          this.ctype = "Player";
+      } else {
+          this.ctype = "NotPlayer";
+      }
+
+      console.log(this.ctype);
+      this.x += 8 * ct.delta * ct.actions.MoveX.value;
+
+      if (this.x > 448) {
+          this.tex = "r1e";
+      } else {
+          this.tex = "r1";
+      }
+
+      if (this.x < 0) { 
+          this.x = 0; 
+      }
+
+      if (this.x > ct.camera.width) { 
+          this.x = ct.camera.width; 
+      }
+    ondraw: ''
+    ondestroy: ''
+    texture: 39394ac4-95dc-4863-829b-fdf83640bd3b
+    extends: {}
+    uid: b641f1ec-daae-4654-bb45-9d7105f2010a
+    lastmod: 1639081509230
+  - name: ball
+    depth: 0
+    oncreate: |-
+      this.ctype = "Ball";
+      this.speed = 3;
+      this.direction = 270;
+      this.next = false;
+      this.saveX = this.x;
+      this.saveY = this.y;
+      this.random;
+      this.slow = false;
+    onstep: >-
+      this.move();
+
+      ct.room.bolinha = this.x;
+
+      if (this.y > ct.viewHeight + 80) {
+          this.x = this.saveX; 
+          this.y = this.saveY; 
+          this.speed = 3;
+          //this.kill = true;
+      }
+
+
+      if (!ct.place.free(this, this.x + Math.sign(this.hspeed), this.y,
+      'Player')) {
+          if (this.direction = 270){
+              this.direction = 90;
+          } else {
+              this.direction = 270;
+          }
+          this.next = true;
+      } 
+
+
+      if (!ct.place.free(this, this.x + Math.sign(this.hspeed), this.y,
+      'PlayerDir')) {
+          this.direction = 45;
+          this.next = true;
+      } 
+
+
+      if (!ct.place.free(this, this.x + Math.sign(this.hspeed), this.y,
+      'PlayerEsq')) {
+          this.direction = 135;
+          this.next = true;
+      } 
+
+
+      if (!ct.place.free(this, this.x + Math.sign(this.hspeed), this.y,
+      'APlayer')) {
+          if ((this.direction = 90) || (this.direction = 45) || (this.direction = 135)) {
+              this.random = Math.random();
+              if (this.random < 0.4){
+                  this.direction = 270;
+              } else if (this.random < 0.7){
+                  this.direction = 225;
+              } else {
+                  this.direction = 315;
+              }
+          }
+          this.speed += 0.25;
+          this.next = false;
+      } 
+
+
+      if (!ct.place.free(this, this.x + Math.sign(this.hspeed), this.y,
+      'WallsD')){
+          if (this.direction === 90){
+              this.direction = 270;
+          }  else if (this.direction === 45){
+              this.direction = 315;
+          } else if (this.direction === 135){
+              this.direction = 225;
+          } 
+          this.slow = true;
+      }
+
+
+      if (!ct.place.free(this, this.x + Math.sign(this.hspeed), this.y,
+      'WallsU')){
+          if (this.direction === 270){
+              this.direction = 90;
+          } else if (this.direction === 315){
+              this.direction = 45;
+          } else if ((this.direction > 224) && (this.direction < 226)){
+              this.direction = 135;
+          } 
+          this.slow = true;
+      }
+
+
+      if (!ct.place.free(this, this.x + Math.sign(this.hspeed), this.y,
+      'WallsL')){
+          if (this.direction === 135){
+              this.direction = 45;
+          }  else {
+              this.direction = 315;
+          }
+          this.slow = true;
+      }
+
+
+      if (!ct.place.free(this, this.x + Math.sign(this.hspeed), this.y,
+      'WallsR')){
+          if (this.direction === 45){
+              this.direction = 135;
+          }  else {
+              this.direction = 225;
+          }
+          this.slow = true;
+      }
+
+
+      if (!ct.place.free(this, this.x + Math.sign(this.hspeed), this.y,
+      'Change')){
+          ct.rooms.switch(ct.room.next)
+      }
+    ondraw: ''
+    ondestroy: ''
+    texture: 67443382-3016-441c-b21d-9835bd1b1c26
+    extends: {}
+    uid: b098c4e9-6fef-4e4c-b7ea-c8913c10a2d8
+    lastmod: 1639087459863
+  - name: raquete_2
+    depth: 0
+    oncreate: |
+      this.ctype = "APlayer";
+      this.speed = 2;
+      this.direction = 360;
+      this.tex = "r2";
+    onstep: |-
+      this.move();
+
+      if (this.x > 448) {
+          this.tex = "r2e";
+      } else {
+          this.tex = "r2";
+      }
+      if (this.x == ct.room.bolinha){
+          this.speed = 0;
+      } else {
+          this.speed = 5;
+          if (this.x < ct.room.bolinha) { 
+              this.direction = 360; 
+          } else {
+              this.direction = 180; 
+          }
+      }
+    ondraw: ''
+    ondestroy: ''
+    texture: 5ac38a58-9122-4f57-b200-a3ac60102146
+    extends: {}
+    uid: ea65fce4-8276-4a85-aefe-59508be3d9d2
+    lastmod: 1639078533748
+  - name: WallsU
+    depth: 0
+    oncreate: this.ctype = "WallsU";
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: 68af6d14-9491-4386-ac54-41d3e04515e9
+    extends: {}
+    uid: cf408087-ca99-48e6-876e-158984a0a0b8
+    lastmod: 1639075423727
+  - name: WallsD
+    depth: 0
+    oncreate: this.ctype = "WallsD";
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: 68af6d14-9491-4386-ac54-41d3e04515e9
+    extends: {}
+    uid: a401d158-17b7-4482-b09e-6c8e23cb8d77
+    lastmod: 1639073293316
+  - name: WallsL
+    depth: 0
+    oncreate: this.ctype = "WallsL";
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: 68af6d14-9491-4386-ac54-41d3e04515e9
+    extends: {}
+    uid: e6a60cab-e1a3-43f1-9ba3-7075db824a4a
+    lastmod: 1639075880238
+  - name: WallsR
+    depth: 0
+    oncreate: this.ctype = "WallsR";
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: 68af6d14-9491-4386-ac54-41d3e04515e9
+    extends: {}
+    uid: b6f77ee0-1956-4cf3-b99d-b4b3b8c367ed
+    lastmod: 1639073357682
+  - name: WallsDB
+    depth: 0
+    oncreate: |-
+      this.ctype = "WallsD";
+      this.visible = true;
+      this.tex = "Wall";
+    onstep: >-
+      this.move();
+
+
+      if (!ct.place.free(this, this.x + Math.sign(this.hspeed), this.y,
+      'Ball')){
+          if (this.tex === 'Wall'){
+              this.tex = 'LessBrokenWall';
+          } else if (this.tex === 'LessBrokenWall'){
+              this.tex = 'BrokenWall';
+          } else {
+              this.visible = false;
+              this.ctype = "Empty";
+          }
+      }
+    ondraw: ''
+    ondestroy: ''
+    texture: 68af6d14-9491-4386-ac54-41d3e04515e9
+    extends: {}
+    uid: 7f3a29d0-7ef2-43c8-8b3a-18f3bfe82e1c
+    lastmod: 1639086592909
+  - name: WallsUB
+    depth: 0
+    oncreate: |-
+      this.ctype = "WallsU";
+      this.visible = true;
+      this.tex = "Wall";
+    onstep: >-
+      this.move();
+
+
+      if (!ct.place.free(this, this.x + Math.sign(this.hspeed), this.y,
+      'Ball')){
+          if (this.tex === 'Wall'){
+              this.tex = 'BrokenWall'
+          } else {
+              this.visible = false;
+              this.ctype = "Empty";
+          }
+      }
+    ondraw: ''
+    ondestroy: ''
+    texture: 68af6d14-9491-4386-ac54-41d3e04515e9
+    extends: {}
+    uid: 93ac8596-89eb-4d2f-a096-883fd4b571d7
+    lastmod: 1639085468157
+  - name: Change
+    depth: 0
+    oncreate: this.ctype = "Change";
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: 69a06820-f325-4893-9f3e-145792523c13
+    extends: {}
+    uid: b28a87ad-c121-4723-b23f-d3e7c9451af9
+    lastmod: 1639087124580
+sounds: []
+styles: []
+rooms:
+  - name: Teste1
+    oncreate: |-
+      this.bolinha = 0;
+      this.next = "Teste2";
+    onstep: ''
+    ondraw: ''
+    onleave: ''
+    width: 800
+    height: 600
+    backgrounds: []
+    copies:
+      - x: 384
+        'y': 256
+        uid: b098c4e9-6fef-4e4c-b7ea-c8913c10a2d8
+        exts: {}
+      - x: 384
+        'y': 512
+        uid: b641f1ec-daae-4654-bb45-9d7105f2010a
+        exts: {}
+      - x: 192
+        'y': 576
+        uid: cf408087-ca99-48e6-876e-158984a0a0b8
+        exts: {}
+      - x: 128
+        'y': 576
+        uid: cf408087-ca99-48e6-876e-158984a0a0b8
+        exts: {}
+      - x: 64
+        'y': 576
+        uid: cf408087-ca99-48e6-876e-158984a0a0b8
+        exts: {}
+      - x: 0
+        'y': 576
+        uid: cf408087-ca99-48e6-876e-158984a0a0b8
+        exts: {}
+      - x: 576
+        'y': 576
+        uid: cf408087-ca99-48e6-876e-158984a0a0b8
+        exts: {}
+      - x: 512
+        'y': 576
+        uid: cf408087-ca99-48e6-876e-158984a0a0b8
+        exts: {}
+      - x: 640
+        'y': 576
+        uid: cf408087-ca99-48e6-876e-158984a0a0b8
+        exts: {}
+      - x: 704
+        'y': 576
+        uid: cf408087-ca99-48e6-876e-158984a0a0b8
+        exts: {}
+      - x: 768
+        'y': 576
+        uid: cf408087-ca99-48e6-876e-158984a0a0b8
+        exts: {}
+      - x: 0
+        'y': -0.0
+        uid: a401d158-17b7-4482-b09e-6c8e23cb8d77
+        exts: {}
+      - x: 64
+        'y': 0
+        uid: a401d158-17b7-4482-b09e-6c8e23cb8d77
+        exts: {}
+      - x: 128
+        'y': 0
+        uid: a401d158-17b7-4482-b09e-6c8e23cb8d77
+        exts: {}
+      - x: 192
+        'y': 0
+        uid: a401d158-17b7-4482-b09e-6c8e23cb8d77
+        exts: {}
+      - x: 576
+        'y': -0.0
+        uid: a401d158-17b7-4482-b09e-6c8e23cb8d77
+        exts: {}
+      - x: 640
+        'y': -0.0
+        uid: a401d158-17b7-4482-b09e-6c8e23cb8d77
+        exts: {}
+      - x: 704
+        'y': 0
+        uid: a401d158-17b7-4482-b09e-6c8e23cb8d77
+        exts: {}
+      - x: 768
+        'y': 0
+        uid: a401d158-17b7-4482-b09e-6c8e23cb8d77
+        exts: {}
+      - x: 0
+        'y': 64
+        uid: e6a60cab-e1a3-43f1-9ba3-7075db824a4a
+        exts: {}
+      - x: 0
+        'y': 128
+        uid: e6a60cab-e1a3-43f1-9ba3-7075db824a4a
+        exts: {}
+      - x: 0
+        'y': 192
+        uid: e6a60cab-e1a3-43f1-9ba3-7075db824a4a
+        exts: {}
+      - x: 0
+        'y': 256
+        uid: e6a60cab-e1a3-43f1-9ba3-7075db824a4a
+        exts: {}
+      - x: 0
+        'y': 320
+        uid: e6a60cab-e1a3-43f1-9ba3-7075db824a4a
+        exts: {}
+      - x: 0
+        'y': 384
+        uid: e6a60cab-e1a3-43f1-9ba3-7075db824a4a
+        exts: {}
+      - x: 0
+        'y': 448
+        uid: e6a60cab-e1a3-43f1-9ba3-7075db824a4a
+        exts: {}
+      - x: 0
+        'y': 512
+        uid: e6a60cab-e1a3-43f1-9ba3-7075db824a4a
+        exts: {}
+      - x: 768
+        'y': 512
+        uid: b6f77ee0-1956-4cf3-b99d-b4b3b8c367ed
+        exts: {}
+      - x: 768
+        'y': 448
+        uid: b6f77ee0-1956-4cf3-b99d-b4b3b8c367ed
+        exts: {}
+      - x: 768
+        'y': 384
+        uid: b6f77ee0-1956-4cf3-b99d-b4b3b8c367ed
+        exts: {}
+      - x: 768
+        'y': 320
+        uid: b6f77ee0-1956-4cf3-b99d-b4b3b8c367ed
+        exts: {}
+      - x: 768
+        'y': 256
+        uid: b6f77ee0-1956-4cf3-b99d-b4b3b8c367ed
+        exts: {}
+      - x: 768
+        'y': 192
+        uid: b6f77ee0-1956-4cf3-b99d-b4b3b8c367ed
+        exts: {}
+      - x: 768
+        'y': 128
+        uid: b6f77ee0-1956-4cf3-b99d-b4b3b8c367ed
+        exts: {}
+      - x: 768
+        'y': 64
+        uid: b6f77ee0-1956-4cf3-b99d-b4b3b8c367ed
+        exts: {}
+      - x: 128
+        'y': 192
+        uid: ea65fce4-8276-4a85-aefe-59508be3d9d2
+        exts: {}
+      - x: 512
+        'y': 0
+        uid: a401d158-17b7-4482-b09e-6c8e23cb8d77
+        exts: {}
+      - x: 256
+        'y': 0
+        uid: 7f3a29d0-7ef2-43c8-8b3a-18f3bfe82e1c
+        exts: {}
+      - x: 448
+        'y': 0
+        uid: 7f3a29d0-7ef2-43c8-8b3a-18f3bfe82e1c
+        exts: {}
+      - x: 256
+        'y': 576
+        uid: cf408087-ca99-48e6-876e-158984a0a0b8
+        exts: {}
+      - x: 448
+        'y': 576
+        uid: cf408087-ca99-48e6-876e-158984a0a0b8
+        exts: {}
+      - x: 320
+        'y': -64
+        uid: b28a87ad-c121-4723-b23f-d3e7c9451af9
+        exts: {}
+      - x: 384
+        'y': -64
+        uid: b28a87ad-c121-4723-b23f-d3e7c9451af9
+        exts: {}
+    tiles:
+      - depth: -10
+        tiles: []
+        extends: {}
+    uid: 0348fa94-852a-4552-a5ca-bc04303b4ff6
+    thumbnail: bc04303b4ff6
+    extends: {}
+    gridX: 64
+    gridY: 64
+    lastmod: 1639087262024
+  - name: Room_42dc748d09d7
+    oncreate: ''
+    onstep: ''
+    ondraw: ''
+    onleave: ''
+    width: 800
+    height: 600
+    backgrounds: []
+    copies: []
+    tiles:
+      - depth: -10
+        tiles: []
+        extends: {}
+    uid: cf42dacd-1b7e-48f9-b142-42dc748d09d7
+    thumbnail: 42dc748d09d7
+    extends: {}
+    gridX: 64
+    gridY: 64
+    lastmod: 1639087234651
+  - name: Teste2
+    oncreate: this.bolinha = 0;
+    onstep: ''
+    ondraw: ''
+    onleave: ''
+    width: 800
+    height: 600
+    backgrounds: []
+    copies:
+      - x: 384
+        'y': 256
+        uid: b098c4e9-6fef-4e4c-b7ea-c8913c10a2d8
+        exts: {}
+      - x: 384
+        'y': 512
+        uid: b641f1ec-daae-4654-bb45-9d7105f2010a
+        exts: {}
+      - x: 192
+        'y': 576
+        uid: cf408087-ca99-48e6-876e-158984a0a0b8
+        exts: {}
+      - x: 128
+        'y': 576
+        uid: cf408087-ca99-48e6-876e-158984a0a0b8
+        exts: {}
+      - x: 64
+        'y': 576
+        uid: cf408087-ca99-48e6-876e-158984a0a0b8
+        exts: {}
+      - x: 0
+        'y': 576
+        uid: cf408087-ca99-48e6-876e-158984a0a0b8
+        exts: {}
+      - x: 576
+        'y': 576
+        uid: cf408087-ca99-48e6-876e-158984a0a0b8
+        exts: {}
+      - x: 512
+        'y': 576
+        uid: cf408087-ca99-48e6-876e-158984a0a0b8
+        exts: {}
+      - x: 640
+        'y': 576
+        uid: cf408087-ca99-48e6-876e-158984a0a0b8
+        exts: {}
+      - x: 704
+        'y': 576
+        uid: cf408087-ca99-48e6-876e-158984a0a0b8
+        exts: {}
+      - x: 768
+        'y': 576
+        uid: cf408087-ca99-48e6-876e-158984a0a0b8
+        exts: {}
+      - x: 0
+        'y': 0
+        uid: a401d158-17b7-4482-b09e-6c8e23cb8d77
+        exts: {}
+      - x: 64
+        'y': 0
+        uid: a401d158-17b7-4482-b09e-6c8e23cb8d77
+        exts: {}
+      - x: 128
+        'y': 0
+        uid: a401d158-17b7-4482-b09e-6c8e23cb8d77
+        exts: {}
+      - x: 192
+        'y': 0
+        uid: a401d158-17b7-4482-b09e-6c8e23cb8d77
+        exts: {}
+      - x: 576
+        'y': 0
+        uid: a401d158-17b7-4482-b09e-6c8e23cb8d77
+        exts: {}
+      - x: 640
+        'y': 0
+        uid: a401d158-17b7-4482-b09e-6c8e23cb8d77
+        exts: {}
+      - x: 704
+        'y': 0
+        uid: a401d158-17b7-4482-b09e-6c8e23cb8d77
+        exts: {}
+      - x: 768
+        'y': 0
+        uid: a401d158-17b7-4482-b09e-6c8e23cb8d77
+        exts: {}
+      - x: 0
+        'y': 64
+        uid: e6a60cab-e1a3-43f1-9ba3-7075db824a4a
+        exts: {}
+      - x: 0
+        'y': 128
+        uid: e6a60cab-e1a3-43f1-9ba3-7075db824a4a
+        exts: {}
+      - x: 0
+        'y': 192
+        uid: e6a60cab-e1a3-43f1-9ba3-7075db824a4a
+        exts: {}
+      - x: 0
+        'y': 256
+        uid: e6a60cab-e1a3-43f1-9ba3-7075db824a4a
+        exts: {}
+      - x: 0
+        'y': 320
+        uid: e6a60cab-e1a3-43f1-9ba3-7075db824a4a
+        exts: {}
+      - x: 0
+        'y': 384
+        uid: e6a60cab-e1a3-43f1-9ba3-7075db824a4a
+        exts: {}
+      - x: 0
+        'y': 448
+        uid: e6a60cab-e1a3-43f1-9ba3-7075db824a4a
+        exts: {}
+      - x: 0
+        'y': 512
+        uid: e6a60cab-e1a3-43f1-9ba3-7075db824a4a
+        exts: {}
+      - x: 768
+        'y': 512
+        uid: b6f77ee0-1956-4cf3-b99d-b4b3b8c367ed
+        exts: {}
+      - x: 768
+        'y': 448
+        uid: b6f77ee0-1956-4cf3-b99d-b4b3b8c367ed
+        exts: {}
+      - x: 768
+        'y': 384
+        uid: b6f77ee0-1956-4cf3-b99d-b4b3b8c367ed
+        exts: {}
+      - x: 768
+        'y': 320
+        uid: b6f77ee0-1956-4cf3-b99d-b4b3b8c367ed
+        exts: {}
+      - x: 768
+        'y': 256
+        uid: b6f77ee0-1956-4cf3-b99d-b4b3b8c367ed
+        exts: {}
+      - x: 768
+        'y': 192
+        uid: b6f77ee0-1956-4cf3-b99d-b4b3b8c367ed
+        exts: {}
+      - x: 768
+        'y': 128
+        uid: b6f77ee0-1956-4cf3-b99d-b4b3b8c367ed
+        exts: {}
+      - x: 768
+        'y': 64
+        uid: b6f77ee0-1956-4cf3-b99d-b4b3b8c367ed
+        exts: {}
+      - x: 128
+        'y': 192
+        uid: ea65fce4-8276-4a85-aefe-59508be3d9d2
+        exts: {}
+      - x: 512
+        'y': 0
+        uid: a401d158-17b7-4482-b09e-6c8e23cb8d77
+        exts: {}
+      - x: 256
+        'y': 0
+        uid: 7f3a29d0-7ef2-43c8-8b3a-18f3bfe82e1c
+        exts: {}
+      - x: 448
+        'y': 0
+        uid: 7f3a29d0-7ef2-43c8-8b3a-18f3bfe82e1c
+        exts: {}
+      - x: 256
+        'y': 576
+        uid: cf408087-ca99-48e6-876e-158984a0a0b8
+        exts: {}
+      - x: 448
+        'y': 576
+        uid: cf408087-ca99-48e6-876e-158984a0a0b8
+        exts: {}
+      - x: 320
+        'y': 0
+        uid: 7f3a29d0-7ef2-43c8-8b3a-18f3bfe82e1c
+        exts: {}
+      - x: 384
+        'y': 0
+        uid: 7f3a29d0-7ef2-43c8-8b3a-18f3bfe82e1c
+        exts: {}
+      - x: 320
+        'y': 576
+        uid: 7f3a29d0-7ef2-43c8-8b3a-18f3bfe82e1c
+        exts: {}
+      - x: 384
+        'y': 576
+        uid: 7f3a29d0-7ef2-43c8-8b3a-18f3bfe82e1c
+        exts: {}
+    tiles:
+      - depth: -10
+        tiles: []
+        extends: {}
+    uid: edabdbf8-82d7-4060-97eb-66adab172fa9
+    thumbnail: 66adab172fa9
+    extends: {}
+    gridX: 64
+    gridY: 64
+    lastmod: 1639087295509
+actions:
+  - name: MoveX
+    methods:
+      - code: keyboard.ArrowRight
+        multiplier: 1
+      - code: keyboard.ArrowLeft
+        multiplier: -1
+  - name: MoveUp
+    methods:
+      - code: keyboard.ArrowUp
+  - name: MoveDown
+    methods:
+      - code: keyboard.ArrowDown
+emitterTandems: []
+scripts: []
+starting: 0
+settings:
+  authoring:
+    author: ''
+    site: ''
+    title: ''
+    version:
+      - 0
+      - 0
+      - 4
+    versionPostfix: ''
+  rendering:
+    usePixiLegacy: true
+    maxFPS: 60
+    pixelatedrender: false
+    highDensity: true
+    desktopMode: maximized
+  export:
+    windows: true
+    linux: true
+    mac: true
+    functionWrap: false
+    codeModifier: none
+  branding:
+    icon: -1
+    accent: '#446adb'
+    invertPreloaderScheme: true
+  fps: 30
+fonts: []
