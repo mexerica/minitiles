@@ -9,4 +9,10 @@ O minigame de navinha foi baseado [nesses tutoriais de TIC 80](https://www.youtu
 
 O joguinho de pesca é **fortemente** baseado nos minigames da serie Zelda.
 
+O pong é baseado em ... Pong e Breakout.
+
+O simulador de batalha de Final Fantasy é uma cópia descarada de Breath of Fire.
+
+![pescador](./Pong/pesquepague/Assets/Sprites/pescador.png)
+
 por Tiago e Ricardo.
