@@ -13,6 +13,6 @@ O sub game de  ping pong é **fortemente** inspirado em jogos como Pong, SuperSt
 
 O simulador de batalha de Final Fantasy é uma cópia descarada de Breath of Fire.
 
-![pescador](./Pong/pesquepague/Assets/Sprites/pescador.png)
+![pescador](./pesquepague/Assets/Sprites/pescador.png)
 
 por Tiago e Ricardo.
