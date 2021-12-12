@@ -9,7 +9,7 @@ O minigame de navinha foi baseado [nesses tutoriais de TIC 80](https://www.youtu
 
 O joguinho de pesca é **fortemente** baseado nos minigames da serie Zelda.
 
-O sub game de  ping pong é **fortemente** inspirado em jogos como Pong, SuperStar Ping Ping e Breakout. 
+O sub game de  ping pong é **fortemente** inspirado em jogos como Pong, SuperStar Ping Pong e Breakout. 
 
 O simulador de batalha de Final Fantasy é uma cópia descarada de Breath of Fire.
 
