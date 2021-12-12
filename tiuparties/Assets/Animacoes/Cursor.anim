@@ -66,7 +66,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: 
+    path: sprite
   m_ScaleCurves: []
   m_FloatCurves: []
   m_PPtrCurves: []
@@ -151,7 +151,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: 
+    path: sprite
     classID: 4
     script: {fileID: 0}
   m_EulerEditorCurves: []
