@@ -5,7 +5,7 @@ public class CursorController : MonoBehaviour
     public GameObject[] boxes;
     BoxController boxAtual;
 
-    //0=menu/1=inimigos/2=submenu/3=confirmar
+    //0=menu/1=inimigos/2=aliados/3=secundaria/4=confirmar
     int estagio = 0;
 
     public void Mover(int axis) {
@@ -14,15 +14,7 @@ public class CursorController : MonoBehaviour
     }
 
     public void SetEstagio(int axis) {
-        int temp = estagio + axis;
-        if (temp >= 0) {
-            if (temp <= 3) {
-                estagio += axis;
-            }
-            else {
-                estagio = 0;
-            }
-        }
+        estagio = axis;
 
         MudarBox();
     }
