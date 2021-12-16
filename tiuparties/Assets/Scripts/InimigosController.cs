@@ -4,13 +4,22 @@ using UnityEngine;
 
 public class InimigosController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    [SerializeField] GameObject[] inimigos;
+
+    public GameObject nomesBox;
+
+    void SetNomesTexto() {
+        for (int i=0; i<inimigos.Length; i++) {
+            nomesBox.transform.GetChild(i).GetComponent<TextMesh>().text = 
+                inimigos[i].GetComponent<Inimigo>().inimigo.nome;
+        }
     }
 
-    // Update is called once per frame
+    void Start()
+    {
+        SetNomesTexto();
+    }
+
     void Update()
     {
         

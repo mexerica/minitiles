@@ -3,7 +3,7 @@ using UnityEngine;
 public class Aliado : MonoBehaviour
 {
     public Personagem aliado;
-    public int iClasse;
+
     public GameObject box;
 
     void EscreverBox() {
@@ -15,8 +15,6 @@ public class Aliado : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        aliado.setClasse(iClasse);
-
         EscreverBox();
     }
 

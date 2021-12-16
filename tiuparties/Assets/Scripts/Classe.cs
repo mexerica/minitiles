@@ -1,27 +1,11 @@
-using System;
+using UnityEngine;
 
-[Serializable]
-public class Classe
+public class Classe : MonoBehaviour
 {
-    public string nome { get; set;}
+    [SerializeField] string nome;
 
-    public Classe (int i) {
-        switch(i) {
-            case 0:
-                nome = "tanker";
-                break;
-            case 1:
-                nome = "cavaleiro";
-                break;
-            case 2:
-                nome = "atirador";
-                break;
-            case 3:
-                nome = "assassino";
-                break;
-            case 4:
-                nome = "mago";
-                break;
-        }
-    }
+    [SerializeField] public Habilidade[] opsoes;
+
+    [SerializeField] Habilidade[] habilidades;
+
 }
