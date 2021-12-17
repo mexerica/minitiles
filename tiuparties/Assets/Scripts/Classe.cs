@@ -4,8 +4,8 @@ public class Classe : MonoBehaviour
 {
     [SerializeField] string nome;
 
-    [SerializeField] public Habilidade[] opsoes;
+    public Habilidade[] opsoes;
 
-    [SerializeField] Habilidade[] habilidades;
+    public Habilidade[] habilidades;
 
 }

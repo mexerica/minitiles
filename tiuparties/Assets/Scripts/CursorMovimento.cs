@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CursorMovimento : MonoBehaviour
 {
-    public CursorController controller;
+    [SerializeField] CursorController controller;
 
     float horizontalMove = 0f;
     float verticalMove = 0f;
@@ -15,10 +15,10 @@ public class CursorMovimento : MonoBehaviour
         verticalMove = Input.GetAxisRaw("Vertical");
 
         if (Input.GetButtonDown("Fire1")) {
-            controller.SetEstagio(1);
+            controller.SetEstagioFwrd();
         }
         else if (Input.GetButtonDown("Fire2")) {
-            controller.SetEstagio(-1);
+            controller.SetEstagioBack();
         }
     }
 

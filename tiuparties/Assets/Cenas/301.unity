@@ -386,7 +386,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: bb977b5695a4f8746922449e962fe16d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -505,7 +505,7 @@ GameObject:
   - component: {fileID: 102457784}
   - component: {fileID: 102457783}
   m_Layer: 0
-  m_Name: lightling2
+  m_Name: habB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -533,7 +533,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 102457781}
-  m_Text: litng2
+  m_Text: 
   m_OffsetZ: 0
   m_CharacterSize: 0.5
   m_LineSpacing: 1
@@ -967,7 +967,7 @@ GameObject:
   - component: {fileID: 259671075}
   - component: {fileID: 259671074}
   m_Layer: 0
-  m_Name: fire3
+  m_Name: habA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -995,7 +995,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259671072}
-  m_Text: fire3
+  m_Text: 
   m_OffsetZ: 0
   m_CharacterSize: 0.5
   m_LineSpacing: 1
@@ -1062,7 +1062,7 @@ GameObject:
   - component: {fileID: 301874177}
   - component: {fileID: 301874176}
   m_Layer: 0
-  m_Name: nomebarsad
+  m_Name: nomeA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1398,7 +1398,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: bb977b5695a4f8746922449e962fe16d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1542,6 +1542,7 @@ MonoBehaviour:
     hp: 0
     hpMax: 0
     classe: {fileID: 471144131}
+  nomeMesh: {fileID: 1336962784}
 --- !u!114 &471144131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1554,12 +1555,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6471a09360e97ca4dba65ee06e68a765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nome: 
+  nome: Tanker
   opsoes:
-  - attack
-  - defend
-  - commands
-  - items
+  - nome: attack
+    custo: 0
+    proximoIndice: 1
+  - nome: defend
+    custo: 0
+    proximoIndice: 2
+  - nome: commands
+    custo: 0
+    proximoIndice: 3
+  - nome: items
+    custo: 0
+    proximoIndice: 3
   habilidades: []
 --- !u!1 &471906645
 GameObject:
@@ -1608,8 +1617,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15fa2e7a4c6f51e4eb7df84049bfc396, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quantidade: 4
   indice: 0
+  quantidade: 4
+  proximosIndices: 00000000000000000000000000000000
   posicoes:
   - {x: 41, y: 52, z: 0}
   - {x: 41, y: 20, z: 0}
@@ -1627,7 +1637,7 @@ GameObject:
   - component: {fileID: 491412058}
   - component: {fileID: 491412057}
   m_Layer: 0
-  m_Name: lightling2Custo
+  m_Name: custoB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1641,7 +1651,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491412055}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 50, y: -14, z: 0}
+  m_LocalPosition: {x: 54, y: -14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2070463854}
@@ -1655,7 +1665,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491412055}
-  m_Text: 7hp
+  m_Text: 
   m_OffsetZ: 0
   m_CharacterSize: 0.5
   m_LineSpacing: 1
@@ -1925,6 +1935,7 @@ MonoBehaviour:
     hp: 0
     hpMax: 0
     classe: {fileID: 530434578}
+  nomeMesh: {fileID: 2024740751}
 --- !u!114 &530434578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1937,12 +1948,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6471a09360e97ca4dba65ee06e68a765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nome: 
+  nome: Mage
   opsoes:
-  - attack
-  - defend
-  - magic
-  - items
+  - nome: attack
+    custo: 0
+    proximoIndice: 1
+  - nome: defend
+    custo: 0
+    proximoIndice: 0
+  - nome: magic
+    custo: 0
+    proximoIndice: 3
+  - nome: items
+    custo: 0
+    proximoIndice: 3
   habilidades: []
 --- !u!1 &618259071
 GameObject:
@@ -1953,6 +1972,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 618259072}
+  - component: {fileID: 618259075}
   - component: {fileID: 618259073}
   - component: {fileID: 618259074}
   m_Layer: 0
@@ -1994,7 +2014,10 @@ MonoBehaviour:
     hp: 418
     hpMax: 464
     classe: {fileID: 618259074}
-  box: {fileID: 352276157}
+  boxOpsoes: {fileID: 1110261505}
+  boxNome: {fileID: 352276157}
+  boxHabilidades: {fileID: 2070463853}
+  animator: {fileID: 618259075}
 --- !u!114 &618259074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2007,22 +2030,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6471a09360e97ca4dba65ee06e68a765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nome: 
+  nome: Knight
   opsoes:
-  - fight
-  - defend
-  - special
-  - items
+  - nome: attack
+    custo: 0
+    proximoIndice: 1
+  - nome: defend
+    custo: 0
+    proximoIndice: 0
+  - nome: special
+    custo: 0
+    proximoIndice: 3
+  - nome: items
+    custo: 0
+    proximoIndice: 3
   habilidades:
   - nome: counter
-    custo: 0
+    custo: 5
     proximoIndice: 0
   - nome: charge
     custo: 0
     proximoIndice: 0
   - nome: berserk
-    custo: 0
+    custo: 5
     proximoIndice: 0
+--- !u!95 &618259075
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618259071}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e2c07e2b8ea328d429144c49f3ae08ec, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &640222768
 GameObject:
   m_ObjectHideFlags: 0
@@ -2383,6 +2433,7 @@ MonoBehaviour:
     hp: 0
     hpMax: 0
     classe: {fileID: 787653036}
+  nomeMesh: {fileID: 1890704921}
 --- !u!114 &787653036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2397,11 +2448,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nome: Thief
   opsoes:
-  - attack
-  - defend
-  - skills
-  - items
-  - run
+  - nome: attack
+    custo: 0
+    proximoIndice: 1
+  - nome: defend
+    custo: 0
+    proximoIndice: 0
+  - nome: skills
+    custo: 0
+    proximoIndice: 3
+  - nome: items
+    custo: 0
+    proximoIndice: 3
+  - nome: run
+    custo: 0
+    proximoIndice: 0
   habilidades: []
 --- !u!1 &838249207
 GameObject:
@@ -2597,8 +2658,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15fa2e7a4c6f51e4eb7df84049bfc396, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quantidade: 4
   indice: 0
+  quantidade: 4
+  proximosIndices: 00000000000000000000000000000000
   posicoes:
   - {x: -76, y: -30, z: 0}
   - {x: -76, y: -40, z: 0}
@@ -2616,7 +2678,7 @@ GameObject:
   - component: {fileID: 874231755}
   - component: {fileID: 874231754}
   m_Layer: 0
-  m_Name: sleepCusto
+  m_Name: custoD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2630,7 +2692,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 874231752}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 50, y: -34, z: 0}
+  m_LocalPosition: {x: 54, y: -34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2070463854}
@@ -2644,7 +2706,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 874231752}
-  m_Text: 3hp
+  m_Text: 
   m_OffsetZ: 0
   m_CharacterSize: 0.5
   m_LineSpacing: 1
@@ -2806,7 +2868,7 @@ GameObject:
   - component: {fileID: 894160418}
   - component: {fileID: 894160417}
   m_Layer: 0
-  m_Name: hasteCusto
+  m_Name: custoE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2820,7 +2882,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 894160415}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 50, y: -44, z: 0}
+  m_LocalPosition: {x: 54, y: -44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2070463854}
@@ -2834,7 +2896,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 894160415}
-  m_Text: 4hp
+  m_Text: 
   m_OffsetZ: 0
   m_CharacterSize: 0.5
   m_LineSpacing: 1
@@ -3057,7 +3119,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: bb977b5695a4f8746922449e962fe16d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3360,7 +3422,7 @@ MonoBehaviour:
   - {fileID: 2058830834}
   - {fileID: 1992308075}
   - {fileID: 618259071}
-  opsoesBox: {fileID: 1110261505}
+  personagemAtivo: {fileID: 0}
 --- !u!1 &1076571931
 GameObject:
   m_ObjectHideFlags: 0
@@ -3373,7 +3435,7 @@ GameObject:
   - component: {fileID: 1076571934}
   - component: {fileID: 1076571933}
   m_Layer: 0
-  m_Name: haste
+  m_Name: habE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3401,7 +3463,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076571931}
-  m_Text: haste
+  m_Text: 
   m_OffsetZ: 0
   m_CharacterSize: 0.5
   m_LineSpacing: 1
@@ -3654,8 +3716,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15fa2e7a4c6f51e4eb7df84049bfc396, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quantidade: 5
   indice: 0
+  quantidade: 0
+  proximosIndices: 
   posicoes:
   - {x: -22, y: -30, z: 0}
   - {x: -22, y: -40, z: 0}
@@ -4044,7 +4107,7 @@ GameObject:
   - component: {fileID: 1336962787}
   - component: {fileID: 1336962786}
   m_Layer: 0
-  m_Name: nomeevremonde
+  m_Name: nomeC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4177,6 +4240,7 @@ MonoBehaviour:
     hp: 0
     hpMax: 0
     classe: {fileID: 1340683203}
+  nomeMesh: {fileID: 301874174}
 --- !u!114 &1340683203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4189,12 +4253,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6471a09360e97ca4dba65ee06e68a765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nome: 
+  nome: Marksman
   opsoes:
-  - shoot
-  - defend
-  - special
-  - items
+  - nome: attack
+    custo: 0
+    proximoIndice: 1
+  - nome: defend
+    custo: 0
+    proximoIndice: 0
+  - nome: special
+    custo: 0
+    proximoIndice: 3
+  - nome: items
+    custo: 0
+    proximoIndice: 3
   habilidades: []
 --- !u!1 &1404080528
 GameObject:
@@ -4269,7 +4341,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: bb977b5695a4f8746922449e962fe16d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4388,7 +4460,7 @@ GameObject:
   - component: {fileID: 1447174227}
   - component: {fileID: 1447174226}
   m_Layer: 0
-  m_Name: sleep
+  m_Name: habD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4416,7 +4488,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447174224}
-  m_Text: sleep
+  m_Text: 
   m_OffsetZ: 0
   m_CharacterSize: 0.5
   m_LineSpacing: 1
@@ -4660,7 +4732,7 @@ GameObject:
   - component: {fileID: 1536335697}
   - component: {fileID: 1536335696}
   m_Layer: 0
-  m_Name: cure2Custo
+  m_Name: custoC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4674,7 +4746,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536335694}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 50, y: -24, z: 0}
+  m_LocalPosition: {x: 54, y: -24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2070463854}
@@ -4688,7 +4760,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536335694}
-  m_Text: 2hp
+  m_Text: 
   m_OffsetZ: 0
   m_CharacterSize: 0.5
   m_LineSpacing: 1
@@ -4818,6 +4890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d89c8d77caa601b4c9039f0ddd349951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aliadosController: {fileID: 1018392366}
   boxes:
   - {fileID: 1110261505}
   - {fileID: 841981644}
@@ -4873,8 +4946,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15fa2e7a4c6f51e4eb7df84049bfc396, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quantidade: 2
   indice: 0
+  quantidade: 2
+  proximosIndices: 0000000000000000
   posicoes:
   - {x: -39, y: -23, z: 0}
   - {x: -39, y: -33, z: 0}
@@ -4954,7 +5028,7 @@ GameObject:
   - component: {fileID: 1603409579}
   - component: {fileID: 1603409578}
   m_Layer: 0
-  m_Name: cure2
+  m_Name: habC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4982,7 +5056,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1603409576}
-  m_Text: cure2
+  m_Text: 
   m_OffsetZ: 0
   m_CharacterSize: 0.5
   m_LineSpacing: 1
@@ -5400,6 +5474,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1844076840}
+  - component: {fileID: 1844076843}
   - component: {fileID: 1844076841}
   - component: {fileID: 1844076842}
   m_Layer: 0
@@ -5441,7 +5516,10 @@ MonoBehaviour:
     hp: 284
     hpMax: 320
     classe: {fileID: 1844076842}
-  box: {fileID: 1404080528}
+  boxOpsoes: {fileID: 1110261505}
+  boxNome: {fileID: 1404080528}
+  boxHabilidades: {fileID: 2070463853}
+  animator: {fileID: 1844076843}
 --- !u!114 &1844076842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5456,24 +5534,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nome: Thief
   opsoes:
-  - attack
-  - defend
-  - skills
-  - items
-  - run
+  - nome: attack
+    custo: 0
+    proximoIndice: 1
+  - nome: defend
+    custo: 0
+    proximoIndice: 0
+  - nome: skills
+    custo: 0
+    proximoIndice: 3
+  - nome: items
+    custo: 0
+    proximoIndice: 3
+  - nome: run
+    custo: 0
+    proximoIndice: 0
   habilidades:
-  - nome: invis
+  - nome: invsblty
     custo: 0
     proximoIndice: 0
-  - nome: detectar invisivel
+  - nome: detect
     custo: 0
     proximoIndice: 0
-  - nome: ataque sorrateiro
+  - nome: sneak
     custo: 0
+    proximoIndice: 1
+  - nome: smoke
+    custo: 5
     proximoIndice: 0
-  - nome: "bomba de fuma\xE7a"
-    custo: 0
-    proximoIndice: 0
+--- !u!95 &1844076843
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844076839}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e2c07e2b8ea328d429144c49f3ae08ec, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1875687505
 GameObject:
   m_ObjectHideFlags: 0
@@ -5840,7 +5947,7 @@ GameObject:
   - component: {fileID: 1890704924}
   - component: {fileID: 1890704923}
   m_Layer: 0
-  m_Name: nomemldefarge
+  m_Name: nomeD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6112,7 +6219,7 @@ GameObject:
   - component: {fileID: 1982354688}
   - component: {fileID: 1982354687}
   m_Layer: 0
-  m_Name: fire3Custo
+  m_Name: custoA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6126,7 +6233,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1982354685}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 50, y: -4, z: 0}
+  m_LocalPosition: {x: 54, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2070463854}
@@ -6140,7 +6247,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1982354685}
-  m_Text: 5hp
+  m_Text: 
   m_OffsetZ: 0
   m_CharacterSize: 0.5
   m_LineSpacing: 1
@@ -6204,6 +6311,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1992308076}
+  - component: {fileID: 1992308079}
   - component: {fileID: 1992308077}
   - component: {fileID: 1992308078}
   m_Layer: 0
@@ -6245,7 +6353,10 @@ MonoBehaviour:
     hp: 91
     hpMax: 280
     classe: {fileID: 1992308078}
-  box: {fileID: 82705930}
+  boxOpsoes: {fileID: 1110261505}
+  boxNome: {fileID: 82705930}
+  boxHabilidades: {fileID: 2070463853}
+  animator: {fileID: 1992308079}
 --- !u!114 &1992308078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6258,25 +6369,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6471a09360e97ca4dba65ee06e68a765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nome: 
+  nome: Mage
   opsoes:
-  - attack
-  - defend
-  - magic
-  - items
+  - nome: attack
+    custo: 0
+    proximoIndice: 1
+  - nome: defend
+    custo: 0
+    proximoIndice: 0
+  - nome: magic
+    custo: 0
+    proximoIndice: 3
+  - nome: items
+    custo: 0
+    proximoIndice: 3
   habilidades:
   - nome: fire
-    custo: 0
-    proximoIndice: 0
+    custo: 3
+    proximoIndice: 1
   - nome: thunder
-    custo: 0
+    custo: 5
     proximoIndice: 0
   - nome: cure
-    custo: 0
-    proximoIndice: 0
+    custo: 2
+    proximoIndice: 2
   - nome: haste
-    custo: 0
-    proximoIndice: 0
+    custo: 3
+    proximoIndice: 2
+--- !u!95 &1992308079
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992308075}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e2c07e2b8ea328d429144c49f3ae08ec, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1993341753
 GameObject:
   m_ObjectHideFlags: 0
@@ -6479,8 +6617,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2000904509}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27, y: -30, z: 0}
-  m_LocalScale: {x: 0.31, y: 0.38, z: 1}
+  m_LocalPosition: {x: 30, y: -30, z: 0}
+  m_LocalScale: {x: 0.35, y: 0.38, z: 1}
   m_Children: []
   m_Father: {fileID: 2070463854}
   m_RootOrder: 10
@@ -6548,7 +6686,7 @@ GameObject:
   - component: {fileID: 2024740754}
   - component: {fileID: 2024740753}
   m_Layer: 0
-  m_Name: nomemrdefarge
+  m_Name: nomeB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6640,6 +6778,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2058830835}
+  - component: {fileID: 2058830838}
   - component: {fileID: 2058830836}
   - component: {fileID: 2058830837}
   m_Layer: 0
@@ -6681,7 +6820,10 @@ MonoBehaviour:
     hp: 487
     hpMax: 514
     classe: {fileID: 2058830837}
-  box: {fileID: 905907879}
+  boxOpsoes: {fileID: 1110261505}
+  boxNome: {fileID: 905907879}
+  boxHabilidades: {fileID: 2070463853}
+  animator: {fileID: 2058830838}
 --- !u!114 &2058830837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6694,19 +6836,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6471a09360e97ca4dba65ee06e68a765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nome: 
+  nome: Tanker
   opsoes:
-  - attack
-  - defend
-  - commands
-  - items
+  - nome: attack
+    custo: 0
+    proximoIndice: 1
+  - nome: defend
+    custo: 0
+    proximoIndice: 2
+  - nome: commands
+    custo: 0
+    proximoIndice: 3
+  - nome: items
+    custo: 0
+    proximoIndice: 3
   habilidades:
-  - nome: proteger
+  - nome: protect
     custo: 0
     proximoIndice: 0
   - nome: unite
     custo: 0
     proximoIndice: 0
+--- !u!95 &2058830838
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058830834}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e2c07e2b8ea328d429144c49f3ae08ec, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2070463853
 GameObject:
   m_ObjectHideFlags: 0
@@ -6734,7 +6903,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070463853}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9, y: -10, z: 0}
+  m_LocalPosition: {x: -14, y: -10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 259671073}
@@ -6809,7 +6978,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
-  m_Size: {x: 56, y: 60}
+  m_Size: {x: 60, y: 60}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -6827,14 +6996,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15fa2e7a4c6f51e4eb7df84049bfc396, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quantidade: 5
   indice: 0
+  quantidade: 0
+  proximosIndices: 
   posicoes:
-  - {x: -11, y: -22, z: 0}
-  - {x: -11, y: -32, z: 0}
-  - {x: -11, y: -42, z: 0}
-  - {x: -11, y: -52, z: 0}
-  - {x: -11, y: -62, z: 0}
+  - {x: -16, y: -22, z: 0}
+  - {x: -16, y: -32, z: 0}
+  - {x: -16, y: -42, z: 0}
+  - {x: -16, y: -52, z: 0}
+  - {x: -16, y: -62, z: 0}
 --- !u!1 &2112016386
 GameObject:
   m_ObjectHideFlags: 0
