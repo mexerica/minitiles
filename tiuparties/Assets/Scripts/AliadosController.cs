@@ -6,7 +6,7 @@ public class AliadosController : MonoBehaviour
 
     [SerializeField] Aliado personagemAtivo;
 
-    int indice;
+    public int indice;
 
     Asao[] asoes;
 

@@ -17,7 +17,7 @@ public class Asao
 
     public override string ToString() {
         if (passivo.nome != null)
-            return (ativo.nome + " vai usar " + asao.nome + " no " + passivo.nome);
+            return (ativo.nome + " vai usar " + asao.nome + " em " + passivo.nome);
         return (ativo.nome + " vai usar " + asao.nome);
     }
 

@@ -11,6 +11,10 @@ public class CursorController : MonoBehaviour
     //0=menu/1=inimigos/2=aliados/3=secundaria/4=confirmar
     List<int> estagios = new List<int>{0};
 
+    //habilidade e alvo pra passar pro controller de turno
+    Habilidade hblt;
+    Personagem passivo = new Personagem();
+
     public void Mover(int axis) {
         Vector3 temp = boxAtual.GetPosicao(axis);
         transform.position = temp;
@@ -38,48 +42,65 @@ public class CursorController : MonoBehaviour
         }
     }
     public void SetEstagioFwrd() {
-        // se o char acabou de escolher
-        if (boxAtual.proximosIndices[boxAtual.indice].proximoIndice == 0) {
-            // manda a habilidade escolhida e a vitima pro aliados controller
-            Habilidade hblt = new Habilidade();
-            Personagem passivo = new Personagem();
-            switch (estagios[estagios.Count-1]) {
-                case 0:
-                    hblt = boxAtual.proximosIndices[boxAtual.indice];
-                    break;
-                case 1:
-                    hblt = boxes[estagios[estagios.Count-2]].GetComponent<BoxController>()
-                        .proximosIndices[
-                            boxes[estagios[estagios.Count-2]].GetComponent<BoxController>().indice
-                        ];
-                    passivo = inimigosController.GetComponent<InimigosController>()
-                        .inimigos[boxAtual.indice].GetComponent<Inimigo>().inimigo;
-                    break;
-                case 2:
-                    hblt = boxes[estagios[estagios.Count-2]].GetComponent<BoxController>()
-                        .proximosIndices[
-                            boxes[estagios[estagios.Count-2]].GetComponent<BoxController>().indice
-                        ];
-                    passivo = aliadosController.GetComponent<AliadosController>()
-                        .aliados[boxAtual.indice].GetComponent<Aliado>().aliado;
-                    break;
-                case 3:
-                    hblt = boxAtual.proximosIndices[boxAtual.indice];
-                    break;
-                case 4:
-                    break;
-            }
-            ResetarEstagios();
-            //manda ativar o proximo personagem
-            aliadosController.GetComponent<AliadosController>()
-                .SetProximoPersonagem(hblt, passivo);
-        }
-        // se ainda não
-        else {
-            estagios.Add(boxAtual.proximosIndices[boxAtual.indice].proximoIndice);
+        // escolher a habilidade que foi...escolhida
+        // ou alvo...
+        switch (estagios[estagios.Count-1]) {
+            case 0:
+                hblt = boxAtual.proximosIndices[boxAtual.indice];
+                break;
+            case 1:
+                passivo = inimigosController.GetComponent<InimigosController>()
+                    .inimigos[boxAtual.indice].GetComponent<Inimigo>().inimigo;
+                break;
+            case 2:
+                passivo = aliadosController.GetComponent<AliadosController>()
+                    .aliados[boxAtual.indice].GetComponent<Aliado>().aliado;
+                break;
+            case 3:
+                hblt = boxAtual.proximosIndices[boxAtual.indice];
+                break;
         }
 
+        // ativar a proxima caixinha
+        switch (boxAtual.proximosIndices[boxAtual.indice].proximoIndice) {
+            case 0:
+                // se o char acabou de escolher
+                if (aliadosController.GetComponent<AliadosController>().indice == 3) {
+                    if (estagios[estagios.Count-1] == 4) {
+                        TerminarEscolha();
+                    }
+                    else {
+                        estagios.Add(4);
+                        MudarBox();
+                    }
+                }
+                // se ainda não
+                else {
+                    TerminarEscolha();
+                }
+                break;
+            // se ainda ta escolhendo
+            case 1:
+            case 2:
+            case 3:
+                estagios.Add(boxAtual.proximosIndices[boxAtual.indice].proximoIndice);
+                MudarBox();
+                break;
+            // se se arrapendeu das escolhas feitas
+            case 4:
+            default:
+                SetEstagioBack();
+                break;
+        }
+    }
+
+    void TerminarEscolha() {
+        // reseta os boxes
+        ResetarEstagios();
         MudarBox();
+        //manda ativar o proximo personagem
+        aliadosController.GetComponent<AliadosController>()
+            .SetProximoPersonagem(hblt, passivo);
     }
 
     void MudarBox() {
