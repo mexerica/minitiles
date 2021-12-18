@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Inimigo : MonoBehaviour
 {
-    [SerializeField] Personagem inimigo;
+    public Personagem inimigo;
 
     [SerializeField] GameObject nomeMesh;
 

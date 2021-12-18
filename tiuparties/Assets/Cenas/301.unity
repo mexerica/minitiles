@@ -1619,7 +1619,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   indice: 0
   quantidade: 4
-  proximosIndices: 00000000000000000000000000000000
+  proximosIndices:
+  - nome: 
+    custo: 0
+    proximoIndice: 0
+  - nome: 
+    custo: 0
+    proximoIndice: 0
+  - nome: 
+    custo: 0
+    proximoIndice: 0
+  - nome: 
+    custo: 0
+    proximoIndice: 0
   posicoes:
   - {x: 41, y: 52, z: 0}
   - {x: 41, y: 20, z: 0}
@@ -2660,7 +2672,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   indice: 0
   quantidade: 4
-  proximosIndices: 00000000000000000000000000000000
+  proximosIndices:
+  - nome: 
+    custo: 0
+    proximoIndice: 0
+  - nome: 
+    custo: 0
+    proximoIndice: 0
+  - nome: 
+    custo: 0
+    proximoIndice: 0
+  - nome: 
+    custo: 0
+    proximoIndice: 0
   posicoes:
   - {x: -76, y: -30, z: 0}
   - {x: -76, y: -40, z: 0}
@@ -3317,7 +3341,6 @@ MonoBehaviour:
   - {fileID: 530434575}
   - {fileID: 471144128}
   - {fileID: 787653033}
-  nomesBox: {fileID: 841981644}
 --- !u!1 &1018392366
 GameObject:
   m_ObjectHideFlags: 0
@@ -3718,7 +3741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   indice: 0
   quantidade: 0
-  proximosIndices: 
+  proximosIndices: []
   posicoes:
   - {x: -22, y: -30, z: 0}
   - {x: -22, y: -40, z: 0}
@@ -4890,6 +4913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d89c8d77caa601b4c9039f0ddd349951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inimigosController: {fileID: 985133701}
   aliadosController: {fileID: 1018392366}
   boxes:
   - {fileID: 1110261505}
@@ -4948,7 +4972,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   indice: 0
   quantidade: 2
-  proximosIndices: 0000000000000000
+  proximosIndices:
+  - nome: 
+    custo: 0
+    proximoIndice: 0
+  - nome: 
+    custo: 0
+    proximoIndice: 0
   posicoes:
   - {x: -39, y: -23, z: 0}
   - {x: -39, y: -33, z: 0}
@@ -6998,7 +7028,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   indice: 0
   quantidade: 0
-  proximosIndices: 
+  proximosIndices: []
   posicoes:
   - {x: -16, y: -22, z: 0}
   - {x: -16, y: -32, z: 0}

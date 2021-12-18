@@ -7,7 +7,7 @@ public class BoxController : MonoBehaviour
 
     [SerializeField] int quantidade;
 
-    public List<int> proximosIndices;
+    public List<Habilidade> proximosIndices;
 
     [SerializeField] Vector3[] posicoes;
 
@@ -40,7 +40,7 @@ public class BoxController : MonoBehaviour
         return posicoes[indice];
     }
 
-    public void SetProximosIndices(List<int> lista) {
+    public void SetProximosIndices(List<Habilidade> lista) {
         proximosIndices = lista;
     }
 

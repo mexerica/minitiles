@@ -2,11 +2,13 @@ using UnityEngine;
 
 public class AliadosController : MonoBehaviour
 {
-    [SerializeField] GameObject[] aliados;
+    public GameObject[] aliados;
 
     [SerializeField] Aliado personagemAtivo;
 
-    int indice = -1;
+    int indice;
+
+    Asao[] asoes;
 
     public void SetAntePersonagem() {
         if (indice > 0) {
@@ -16,36 +18,44 @@ public class AliadosController : MonoBehaviour
             personagemAtivo.SetAtivo();
         }
     }
-    public void SetProximoPersonagem() {
+    public void SetProximoPersonagem(Habilidade hblt, Personagem passivo) {
+        asoes[indice] = new Asao(
+            personagemAtivo.aliado, hblt, passivo
+        );
+
         indice += 1;
 
-        if (personagemAtivo != null)
-            personagemAtivo.SetInativo();
+        personagemAtivo.SetInativo();
         
         if (indice>=aliados.Length) {
+            // se todos os personagens já escolheram
             TerminarTurno();
-
-            indice = 0;
-            personagemAtivo = aliados[indice].GetComponent<Aliado>();
         }
         else {
+            // se ainda não
             personagemAtivo = aliados[indice].GetComponent<Aliado>();
+            personagemAtivo.SetAtivo();
         }
-        
+    }
+
+    void ComesarTurno() {
+        indice = 0;
+        personagemAtivo = aliados[indice].GetComponent<Aliado>();
         personagemAtivo.SetAtivo();
+
+        asoes = new Asao[4];
     }
 
     void TerminarTurno() {
-        Debug.Log("Pode vir me limpar.");
+        foreach (Asao asao in asoes) {
+            Debug.Log(asao);
+        }
+
+        ComesarTurno();
     }
 
     void Start()
     {
-        SetProximoPersonagem();
-    }
-
-    void Update()
-    {
-        
+        ComesarTurno();
     }
 }
