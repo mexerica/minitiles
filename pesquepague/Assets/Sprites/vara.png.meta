@@ -1,31 +1,22 @@
 fileFormatVersion: 2
-guid: efbb7f192f8d7b74ea6965bb3c094b9c
+guid: b320d5802d800984bb4c5eac36654970
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9193610178706184784
-    second: pescador_0
+      213: -4768048162578969850
+    second: vara_0
   - first:
-      213: -2778559367717519139
-    second: pescador_1
+      213: -7305209265505169570
+    second: vara_1
   - first:
-      213: 4416826606730854615
-    second: pescador_2
+      213: -4088113063226293075
+    second: vara_2
   - first:
-      213: 3916072692613013539
-    second: pescador_3
+      213: -7277339324181455381
+    second: vara_3
   - first:
-      213: 6434342490340707109
-    second: pescador_4
-  - first:
-      213: -6735960556482329075
-    second: pescador_5
-  - first:
-      213: 6282149341820338555
-    second: pescador_6
-  - first:
-      213: -7986654240296885266
-    second: pescador_7
+      213: 2871667029468985522
+    second: vara_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -127,7 +118,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pescador_0
+      name: vara_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b56dc6904cb96080800000000000000
-      internalID: -9193610178706184784
+      spriteID: 60bc685557d74ddb0800000000000000
+      internalID: -4768048162578969850
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pescador_1
+      name: vara_1
       rect:
         serializedVersion: 2
         x: 42
@@ -162,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd00ddbf9f29079d0800000000000000
-      internalID: -2778559367717519139
+      spriteID: e5f0cafa0eeae9a90800000000000000
+      internalID: -7305209265505169570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pescador_2
+      name: vara_2
       rect:
         serializedVersion: 2
         x: 84
@@ -183,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d0cfa0c568bb4d30800000000000000
-      internalID: 4416826606730854615
+      spriteID: da443c824da1447c0800000000000000
+      internalID: -4088113063226293075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pescador_3
+      name: vara_3
       rect:
         serializedVersion: 2
         x: 126
@@ -204,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3206ecd9d5fa85630800000000000000
-      internalID: 3916072692613013539
+      spriteID: bedde201172b10b90800000000000000
+      internalID: -7277339324181455381
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pescador_4
+      name: vara_4
       rect:
         serializedVersion: 2
         x: 0
@@ -225,71 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52bc5f387606b4950800000000000000
-      internalID: 6434342490340707109
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pescador_5
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 0
-        width: 42
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d0604d1009f0582a0800000000000000
-      internalID: -6735960556482329075
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pescador_6
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 0
-        width: 42
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b71c729ca8dae2750800000000000000
-      internalID: 6282149341820338555
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pescador_7
-      rect:
-        serializedVersion: 2
-        x: 126
-        y: 0
-        width: 42
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ee3ac379844b92190800000000000000
-      internalID: -7986654240296885266
+      spriteID: 2b833b4d2f53ad720800000000000000
+      internalID: 2871667029468985522
       vertices: []
       indices: 
       edges: []

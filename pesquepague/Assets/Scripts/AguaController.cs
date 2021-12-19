@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AguaController : MonoBehaviour
 {
-    public GameObject player;
+    [SerializeField] GameObject player;
     IscaController isca;
 
     void OnTriggerEnter2D(Collider2D outro) {

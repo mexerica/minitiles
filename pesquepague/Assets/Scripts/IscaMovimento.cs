@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class IscaMovimento : MonoBehaviour
 {
-    public IscaController controller;
+    [SerializeField] IscaController controller;
 
     public bool isLansada = false;
 

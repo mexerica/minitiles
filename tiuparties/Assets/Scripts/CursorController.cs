@@ -3,17 +3,18 @@ using UnityEngine;
 
 public class CursorController : MonoBehaviour
 {
-    [SerializeField] GameObject inimigosController;
     [SerializeField] GameObject aliadosController;
+    [SerializeField] GameObject inimigosController;
     [SerializeField] GameObject[] boxes;
     BoxController boxAtual;
 
-    //0=menu/1=inimigos/2=aliados/3=secundaria/4=confirmar
+    //0=menu/1=inimigos/2=aliados/3=habilidades/4=itens/5=confirmar
     List<int> estagios = new List<int>{0};
 
-    //habilidade e alvo pra passar pro controller de turno
+    //habilidade/item e alvo pra passar pro controller de turno
     Habilidade hblt;
-    Personagem passivo = new Personagem();
+    Item item;
+    Personagem passivo;
 
     public void Mover(int axis) {
         Vector3 temp = boxAtual.GetPosicao(axis);
@@ -22,14 +23,17 @@ public class CursorController : MonoBehaviour
 
     void ResetarEstagios() {
         //desativa as caixas auxiliares
-            boxes[3].SetActive(false);
-            boxes[4].SetActive(false);
-            //reseta a lista de estagios do cursor
-            estagios = new List<int>{0};
+        boxes[3].SetActive(false);
+        boxes[4].SetActive(false);
+        boxes[5].SetActive(false);
+        //reseta a lista de estagios do cursor
+        estagios = new List<int>{0};
     }
 
     public void SetEstagioBack() {
+        // se dá pra voltar mais
         if (estagios.Count > 1) {
+            // desativa a box se precisar
             if (estagios[estagios.Count-1] > 2) {
                 boxAtual.gameObject.SetActive(false);
             }
@@ -37,6 +41,7 @@ public class CursorController : MonoBehaviour
 
             MudarBox();
         }
+        // se já voltou tudo
         else {
             aliadosController.GetComponent<AliadosController>().SetAntePersonagem();
         }
@@ -45,32 +50,38 @@ public class CursorController : MonoBehaviour
         // escolher a habilidade que foi...escolhida
         // ou alvo...
         switch (estagios[estagios.Count-1]) {
+            //caixas com habilidades/items
             case 0:
+            case 3:
+            case 4:
                 hblt = boxAtual.proximosIndices[boxAtual.indice];
+                passivo = new Personagem();
                 break;
+            //caixa com inimigos
             case 1:
                 passivo = inimigosController.GetComponent<InimigosController>()
                     .inimigos[boxAtual.indice].GetComponent<Inimigo>().inimigo;
                 break;
+            //caixa com aliados
             case 2:
                 passivo = aliadosController.GetComponent<AliadosController>()
                     .aliados[boxAtual.indice].GetComponent<Aliado>().aliado;
-                break;
-            case 3:
-                hblt = boxAtual.proximosIndices[boxAtual.indice];
                 break;
         }
 
         // ativar a proxima caixinha
         switch (boxAtual.proximosIndices[boxAtual.indice].proximoIndice) {
+            // se o char acabou de escolher
             case 0:
-                // se o char acabou de escolher
+                // se todos os chars já escolheram
                 if (aliadosController.GetComponent<AliadosController>().indice == 3) {
-                    if (estagios[estagios.Count-1] == 4) {
+                    // se ele confirmou as escolhas
+                    if (estagios[estagios.Count-1] == 5) {
                         TerminarEscolha();
                     }
+                    // vai pra caixa de confirmar escolhas
                     else {
-                        estagios.Add(4);
+                        estagios.Add(5);
                         MudarBox();
                     }
                 }
@@ -83,11 +94,13 @@ public class CursorController : MonoBehaviour
             case 1:
             case 2:
             case 3:
+            case 4:
+                // vai pra proxima caixa
                 estagios.Add(boxAtual.proximosIndices[boxAtual.indice].proximoIndice);
                 MudarBox();
                 break;
             // se se arrapendeu das escolhas feitas
-            case 4:
+            case 5:
             default:
                 SetEstagioBack();
                 break;

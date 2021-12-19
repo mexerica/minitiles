@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class IscaController : MonoBehaviour
 {
-    public IscaMovimento movimento;
+    [SerializeField] IscaMovimento movimento;
 
-    public GameObject forsa;
+    [SerializeField] GameObject forsa;
 
-    public GameObject pescador;
+    [SerializeField] GameObject pescador;
 
     public bool isUnderAgua = false;
 
@@ -17,14 +17,22 @@ public class IscaController : MonoBehaviour
 
     private GameObject peixe;
 
+    Animator pescadorAnimator;
+
     private int nPuxadas;
     private int tipoPeixe;
 
     public void EscolherForsa() {
+        //animar o lansamento
+        pescadorAnimator.SetBool("preparar", true);
+
         forsa.SetActive(true);
     }
 
     public void LansarIsca() {
+        //desanimar o lansamento
+        pescadorAnimator.SetBool("preparar", false);
+
         float valor = forsa.GetComponent<ForsaController>().Retornar();
         forsa.SetActive(false);
         corpo.AddForce( new Vector2(-valor, 50f) );
@@ -125,6 +133,9 @@ public class IscaController : MonoBehaviour
     void Start()
     {
         corpo = gameObject.GetComponent<Rigidbody2D>();
+
+        pescadorAnimator = pescador.GetComponent<Animator>();
+
         posOrigem = transform.position;
     }
 

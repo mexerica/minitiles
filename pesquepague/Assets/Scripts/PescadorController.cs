@@ -3,9 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class PescadorController : MonoBehaviour
 {
-    public GameObject peixes;
+    [SerializeField] GameObject peixes;
 
-    public int objetivoPeixes = 3;
+    [SerializeField] int objetivoPeixes = 3;
 
     int nPescados;
 

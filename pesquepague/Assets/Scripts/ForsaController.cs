@@ -6,9 +6,9 @@ public class ForsaController : MonoBehaviour
 {
     [Range(1f, 72f)] public float valor = 1f;
 
-    public float velocidade = 0.5f;
+    [SerializeField] float velocidade = 0.5f;
 
-    public int tolerancia = 6;
+    [SerializeField] int tolerancia = 6;
 
     private Transform marcador;
 

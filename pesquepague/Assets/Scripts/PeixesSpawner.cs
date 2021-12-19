@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class PeixesSpawner : MonoBehaviour
 {
-    public GameObject[] peixes;
+    [SerializeField] GameObject[] peixes;
 
-    public int[] quantidades;
+    [SerializeField] int[] quantidades;
 
     void Spawnar(GameObject peixe, int i) {
         Vector3 ponto = new Vector3(
