@@ -1727,10 +1727,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9882e833f6fddb4489a44c40578db31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inimigo:
-    nome: Defarge
-    hp: 0
-    hpMax: 0
+  personagem:
+    nome: defarge
+    hp: 218
+    hpMax: 260
     classe: {fileID: 471144131}
   nomeMesh: {fileID: 1336962784}
 --- !u!114 &471144131
@@ -1770,6 +1770,7 @@ GameObject:
   m_Component:
   - component: {fileID: 471906646}
   - component: {fileID: 471906647}
+  - component: {fileID: 471906648}
   m_Layer: 0
   m_Name: aliadosnomes
   m_TagString: Untagged
@@ -1808,25 +1809,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   indice: 0
-  quantidade: 4
-  proximosIndices:
-  - nome: 
-    custo: 0
-    proximoIndice: 0
-  - nome: 
-    custo: 0
-    proximoIndice: 0
-  - nome: 
-    custo: 0
-    proximoIndice: 0
-  - nome: 
-    custo: 0
-    proximoIndice: 0
   posicoes:
   - {x: 41, y: 52, z: 0}
   - {x: 41, y: 20, z: 0}
   - {x: 41, y: -12, z: 0}
   - {x: 41, y: -44, z: 0}
+  possibilidades: []
+  quantidade: 4
+--- !u!114 &471906648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471906645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92ec80e31aab35940a66695226dfd093, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aliados:
+  - {fileID: 1844076841}
+  - {fileID: 2058830836}
+  - {fileID: 1992308077}
+  - {fileID: 618259073}
+  quantidade: 4
 --- !u!1 &491412055
 GameObject:
   m_ObjectHideFlags: 0
@@ -2132,10 +2139,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9882e833f6fddb4489a44c40578db31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inimigo:
-    nome: Evremonde
-    hp: 0
-    hpMax: 0
+  personagem:
+    nome: evremnd.
+    hp: 74
+    hpMax: 96
     classe: {fileID: 530434578}
   nomeMesh: {fileID: 2024740751}
 --- !u!114 &530434578
@@ -2306,15 +2313,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e089d33764b64a42b92777661d9abfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aliado:
-    nome: Pross
-    hp: 418
-    hpMax: 464
+  personagem:
+    nome: pross
+    hp: 167
+    hpMax: 184
     classe: {fileID: 618259074}
-  boxOpsoes: {fileID: 1110261505}
   boxNome: {fileID: 352276157}
-  boxHabilidades: {fileID: 2070463853}
+  boxesController: {fileID: 786270577}
   animator: {fileID: 618259075}
+  asao:
+    ativo:
+      nome: 
+      hp: 0
+      hpMax: 0
+      classe: {fileID: 0}
+    habilidade:
+      nome: 
+      custo: 0
+      proximoIndice: 0
+    item:
+      nome: 
+      quantidade: 0
+      proximoIndice: 0
+    passivo:
+      nome: 
+      hp: 0
+      hpMax: 0
+      classe: {fileID: 0}
 --- !u!114 &618259074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2331,7 +2356,7 @@ MonoBehaviour:
   opsoes:
   - nome: attack
     custo: 0
-    proximoIndice: 1
+    proximoIndice: 2
   - nome: defend
     custo: 0
     proximoIndice: 0
@@ -2828,6 +2853,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 786270578}
+  - component: {fileID: 786270579}
   m_Layer: 0
   m_Name: boxes
   m_TagString: Untagged
@@ -2858,6 +2884,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &786270579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786270577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7735da83fad6b6545a89582a70672eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxOpsoes: {fileID: 1110261505}
+  boxHabilidades: {fileID: 2070463853}
+  boxItems: {fileID: 1083844554}
+  boxAliados: {fileID: 471906645}
+  boxInimigos: {fileID: 841981644}
+  boxDescrisao: {fileID: 334546515}
+  boxConfirmar: {fileID: 1594975640}
+  boxAtivo: {fileID: 0}
 --- !u!1 &787653033
 GameObject:
   m_ObjectHideFlags: 0
@@ -2903,10 +2949,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9882e833f6fddb4489a44c40578db31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inimigo:
-    nome: Barsad
-    hp: 0
-    hpMax: 0
+  personagem:
+    nome: barsad
+    hp: 112
+    hpMax: 112
     classe: {fileID: 787653036}
   nomeMesh: {fileID: 1890704921}
 --- !u!114 &787653036
@@ -3045,6 +3091,7 @@ GameObject:
   - component: {fileID: 841981645}
   - component: {fileID: 841981646}
   - component: {fileID: 841981647}
+  - component: {fileID: 841981648}
   m_Layer: 0
   m_Name: inimigosnomes
   m_TagString: Untagged
@@ -3134,25 +3181,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   indice: 0
-  quantidade: 4
-  proximosIndices:
-  - nome: 
-    custo: 0
-    proximoIndice: 0
-  - nome: 
-    custo: 0
-    proximoIndice: 0
-  - nome: 
-    custo: 0
-    proximoIndice: 0
-  - nome: 
-    custo: 0
-    proximoIndice: 0
   posicoes:
   - {x: -76, y: -30, z: 0}
   - {x: -76, y: -40, z: 0}
   - {x: -76, y: -50, z: 0}
   - {x: -76, y: -60, z: 0}
+  possibilidades: []
+  quantidade: 4
+--- !u!114 &841981648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841981644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee98e4cb83e3c754a93568a044ad0643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inimigos:
+  - {fileID: 1340683202}
+  - {fileID: 530434577}
+  - {fileID: 471144130}
+  - {fileID: 787653035}
 --- !u!1 &874231752
 GameObject:
   m_ObjectHideFlags: 0
@@ -3989,11 +4041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 218544e649e3b0a479d80f4cd0b5aa10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inimigos:
-  - {fileID: 1340683200}
-  - {fileID: 530434575}
-  - {fileID: 471144128}
-  - {fileID: 787653033}
+  inimigos: {fileID: 841981648}
 --- !u!1 &1018392366
 GameObject:
   m_ObjectHideFlags: 0
@@ -4093,27 +4141,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2f22ad95a497b0418586695c2070c7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aliados:
-  - {fileID: 1844076839}
-  - {fileID: 2058830834}
-  - {fileID: 1992308075}
-  - {fileID: 618259071}
+  aliados: {fileID: 471906648}
   personagemAtivo: {fileID: 0}
-  indice: 0
-  boxItems: {fileID: 1083844554}
-  items:
-  - nome: potion
-    quantidade: 4
-    proximoIndice: 2
-  - nome: antidote
-    quantidade: 4
-    proximoIndice: 2
-  - nome: revive
-    quantidade: 1
-    proximoIndice: 2
-  - nome: bomb
-    quantidade: 3
-    proximoIndice: 1
+  atual: 0
 --- !u!1 &1076571931
 GameObject:
   m_ObjectHideFlags: 0
@@ -4221,6 +4251,7 @@ GameObject:
   - component: {fileID: 1083844558}
   - component: {fileID: 1083844557}
   - component: {fileID: 1083844556}
+  - component: {fileID: 1083844559}
   m_Layer: 0
   m_Name: aliadositems
   m_TagString: Untagged
@@ -4266,14 +4297,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   indice: 0
-  quantidade: 0
-  proximosIndices: []
   posicoes:
   - {x: -16, y: -22, z: 0}
   - {x: -16, y: -32, z: 0}
   - {x: -16, y: -42, z: 0}
   - {x: -16, y: -52, z: 0}
   - {x: -16, y: -62, z: 0}
+  possibilidades: []
+  quantidade: 0
 --- !u!114 &1083844557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4338,6 +4369,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1083844559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083844554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87f4035eed2c0ee4e808549e324f7678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - nome: potion
+    quantidade: 4
+    proximoIndice: 1
+  - nome: antidote
+    quantidade: 4
+    proximoIndice: 1
+  - nome: bomb
+    quantidade: 2
+    proximoIndice: 2
+  - nome: revive
+    quantidade: 1
+    proximoIndice: 1
+  quantidade: 0
 --- !u!1 &1106401158
 GameObject:
   m_ObjectHideFlags: 0
@@ -4444,6 +4501,7 @@ GameObject:
   - component: {fileID: 1110261506}
   - component: {fileID: 1110261507}
   - component: {fileID: 1110261508}
+  - component: {fileID: 1110261509}
   m_Layer: 0
   m_Name: aliadoopsoes
   m_TagString: Untagged
@@ -4537,8 +4595,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   indice: 0
-  quantidade: 0
-  proximosIndices: []
   posicoes:
   - {x: -22, y: -30, z: 0}
   - {x: -22, y: -40, z: 0}
@@ -4548,6 +4604,22 @@ MonoBehaviour:
   - {x: 10, y: -40, z: 0}
   - {x: 10, y: -50, z: 0}
   - {x: 10, y: -60, z: 0}
+  possibilidades: []
+  quantidade: 0
+--- !u!114 &1110261509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110261505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bafe2fd8978948048a95ff9dcd7282ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  habilidades: []
+  quantidade: 0
 --- !u!1 &1149561957
 GameObject:
   m_ObjectHideFlags: 0
@@ -5055,10 +5127,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9882e833f6fddb4489a44c40578db31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inimigo:
-    nome: Therese
-    hp: 0
-    hpMax: 0
+  personagem:
+    nome: therese
+    hp: 116
+    hpMax: 188
     classe: {fileID: 1340683203}
   nomeMesh: {fileID: 301874174}
 --- !u!114 &1340683203
@@ -5712,13 +5784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aliadosController: {fileID: 1018392366}
   inimigosController: {fileID: 985133701}
-  boxes:
-  - {fileID: 1110261505}
-  - {fileID: 841981644}
-  - {fileID: 471906645}
-  - {fileID: 2070463853}
-  - {fileID: 1083844554}
-  - {fileID: 1594975640}
+  boxesController: {fileID: 786270577}
 --- !u!1 &1572406538
 GameObject:
   m_ObjectHideFlags: 0
@@ -5959,17 +6025,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   indice: 0
-  quantidade: 2
-  proximosIndices:
-  - nome: 
-    custo: 0
-    proximoIndice: 0
-  - nome: 
-    custo: 0
-    proximoIndice: 5
   posicoes:
   - {x: -39, y: -23, z: 0}
   - {x: -39, y: -33, z: 0}
+  possibilidades: []
+  quantidade: 2
 --- !u!114 &1594975643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6624,15 +6684,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e089d33764b64a42b92777661d9abfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aliado:
-    nome: Sydn.
-    hp: 284
-    hpMax: 320
+  personagem:
+    nome: sydny.
+    hp: 98
+    hpMax: 115
     classe: {fileID: 1844076842}
-  boxOpsoes: {fileID: 1110261505}
   boxNome: {fileID: 1404080528}
-  boxHabilidades: {fileID: 2070463853}
+  boxesController: {fileID: 786270577}
   animator: {fileID: 1844076843}
+  asao:
+    ativo:
+      nome: 
+      hp: 0
+      hpMax: 0
+      classe: {fileID: 0}
+    habilidade:
+      nome: 
+      custo: 0
+      proximoIndice: 0
+    item:
+      nome: 
+      quantidade: 0
+      proximoIndice: 0
+    passivo:
+      nome: 
+      hp: 0
+      hpMax: 0
+      classe: {fileID: 0}
 --- !u!114 &1844076842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6649,7 +6727,7 @@ MonoBehaviour:
   opsoes:
   - nome: attack
     custo: 0
-    proximoIndice: 1
+    proximoIndice: 2
   - nome: defend
     custo: 0
     proximoIndice: 0
@@ -6671,7 +6749,7 @@ MonoBehaviour:
     proximoIndice: 0
   - nome: sneak
     custo: 8
-    proximoIndice: 1
+    proximoIndice: 2
   - nome: smoke
     custo: 5
     proximoIndice: 0
@@ -7461,15 +7539,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e089d33764b64a42b92777661d9abfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aliado:
-    nome: Alex.
-    hp: 91
-    hpMax: 280
+  personagem:
+    nome: alex.
+    hp: 26
+    hpMax: 97
     classe: {fileID: 1992308078}
-  boxOpsoes: {fileID: 1110261505}
   boxNome: {fileID: 82705930}
-  boxHabilidades: {fileID: 2070463853}
+  boxesController: {fileID: 786270577}
   animator: {fileID: 1992308079}
+  asao:
+    ativo:
+      nome: 
+      hp: 0
+      hpMax: 0
+      classe: {fileID: 0}
+    habilidade:
+      nome: 
+      custo: 0
+      proximoIndice: 0
+    item:
+      nome: 
+      quantidade: 0
+      proximoIndice: 0
+    passivo:
+      nome: 
+      hp: 0
+      hpMax: 0
+      classe: {fileID: 0}
 --- !u!114 &1992308078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7486,7 +7582,7 @@ MonoBehaviour:
   opsoes:
   - nome: attack
     custo: 0
-    proximoIndice: 1
+    proximoIndice: 2
   - nome: defend
     custo: 0
     proximoIndice: 0
@@ -7499,16 +7595,16 @@ MonoBehaviour:
   habilidades:
   - nome: fire
     custo: 3
-    proximoIndice: 1
+    proximoIndice: 2
   - nome: thunder
     custo: 5
     proximoIndice: 0
   - nome: cure
     custo: 2
-    proximoIndice: 2
+    proximoIndice: 1
   - nome: haste
     custo: 3
-    proximoIndice: 2
+    proximoIndice: 1
 --- !u!95 &1992308079
 Animator:
   serializedVersion: 3
@@ -7928,15 +8024,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e089d33764b64a42b92777661d9abfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aliado:
-    nome: Lucie
-    hp: 487
-    hpMax: 514
+  personagem:
+    nome: lucie
+    hp: 212
+    hpMax: 240
     classe: {fileID: 2058830837}
-  boxOpsoes: {fileID: 1110261505}
   boxNome: {fileID: 905907879}
-  boxHabilidades: {fileID: 2070463853}
+  boxesController: {fileID: 786270577}
   animator: {fileID: 2058830838}
+  asao:
+    ativo:
+      nome: 
+      hp: 0
+      hpMax: 0
+      classe: {fileID: 0}
+    habilidade:
+      nome: 
+      custo: 0
+      proximoIndice: 0
+    item:
+      nome: 
+      quantidade: 0
+      proximoIndice: 0
+    passivo:
+      nome: 
+      hp: 0
+      hpMax: 0
+      classe: {fileID: 0}
 --- !u!114 &2058830837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7953,10 +8067,10 @@ MonoBehaviour:
   opsoes:
   - nome: attack
     custo: 0
-    proximoIndice: 1
+    proximoIndice: 2
   - nome: defend
     custo: 0
-    proximoIndice: 2
+    proximoIndice: 1
   - nome: commands
     custo: 0
     proximoIndice: 3
@@ -8001,6 +8115,7 @@ GameObject:
   - component: {fileID: 2070463856}
   - component: {fileID: 2070463855}
   - component: {fileID: 2070463857}
+  - component: {fileID: 2070463858}
   m_Layer: 0
   m_Name: aliadohabilidades
   m_TagString: Untagged
@@ -8110,14 +8225,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   indice: 0
-  quantidade: 0
-  proximosIndices: []
   posicoes:
   - {x: -16, y: -22, z: 0}
   - {x: -16, y: -32, z: 0}
   - {x: -16, y: -42, z: 0}
   - {x: -16, y: -52, z: 0}
   - {x: -16, y: -62, z: 0}
+  possibilidades: []
+  quantidade: 0
+--- !u!114 &2070463858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070463853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bafe2fd8978948048a95ff9dcd7282ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  habilidades: []
+  quantidade: 0
 --- !u!1 &2085239150
 GameObject:
   m_ObjectHideFlags: 0

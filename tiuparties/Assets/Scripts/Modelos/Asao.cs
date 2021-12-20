@@ -25,7 +25,7 @@ public class Asao
 
     public override string ToString() {
         // se for usar uma habilidade
-        if (habilidade.nome != null) {
+        if (habilidade != null) {
             if (passivo.nome != null)
                 return (ativo.nome + " vai usar " + habilidade.nome + " em " + passivo.nome);
             return (ativo.nome + " vai usar " + habilidade.nome);

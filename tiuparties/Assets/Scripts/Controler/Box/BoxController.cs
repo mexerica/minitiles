@@ -5,11 +5,11 @@ public class BoxController : MonoBehaviour
 {
     public int indice = 0;
 
-    [SerializeField] int quantidade;
-
-    public List<Habilidade> proximosIndices;
-
     [SerializeField] Vector3[] posicoes;
+
+    public List<string> possibilidades;
+
+    [SerializeField] int quantidade;
 
     public Vector3 GetPosicao(int i) {
         int temp = indice + i;
@@ -40,21 +40,33 @@ public class BoxController : MonoBehaviour
         return posicoes[indice];
     }
 
-    public void SetProximosIndices(List<Habilidade> lista) {
-        proximosIndices = lista;
+    public void SetPossibilidades(List<string> lista) {
+        possibilidades = lista;
     }
 
-    public void EscreverTextos(List<string> textos, int qnt) {
-        for (int i=0; i<textos.Count; i++) {
-            transform.GetChild(i).GetComponent<TextMesh>().text = textos[i];
-        }
+    public void SetQuantidade(int qnt) {
         quantidade = qnt;
     }
 
-    public void ApagarTextos() {
+    public void EscreverTextos() {
+        ApagarTextos();
+
+        for (int i=0; i<possibilidades.Count; i++) {
+            transform.GetChild(i).GetComponent<TextMesh>().text = possibilidades[i];
+        }
+    }
+
+    void ApagarTextos() {
         for(int i=0; i<transform.childCount-1; i++) {
             transform.GetChild(i).GetComponent<TextMesh>().text = "";
         }
+    }
+
+    public void SetAtivo() {
+        gameObject.SetActive(true);
+    }
+    public void SetInativo() {
+        gameObject.SetActive(false);
     }
 
 }

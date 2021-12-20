@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class InimigosController : MonoBehaviour
 {
-    public GameObject[] inimigos;
+    public Inimigos inimigos;
 
     void Start()
     {

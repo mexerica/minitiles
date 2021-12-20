@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class Inimigo : MonoBehaviour
 {
-    public Personagem inimigo;
+    public Personagem personagem;
 
     [SerializeField] GameObject nomeMesh;
 
+    Asao asao;
+
     void EscreverMesh() {
-        nomeMesh.GetComponent<TextMesh>().text = inimigo.nome;
+        nomeMesh.GetComponent<TextMesh>().text = personagem.nome;
     }
 
     // Start is called before the first frame update
