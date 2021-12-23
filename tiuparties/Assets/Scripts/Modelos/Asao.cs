@@ -11,6 +11,8 @@ public class Asao
 
     public Personagem passivo;
 
+    public Asao() {  }
+
     public Asao(Personagem ativo, Habilidade habilidade, Personagem passivo) {
         this.ativo = ativo;
         this.habilidade = habilidade;
@@ -35,6 +37,15 @@ public class Asao
             if (passivo.nome != null)
                 return (ativo.nome + " vai usar " + item.nome + " em " + passivo.nome);
             return (ativo.nome + " vai usar " + item.nome);
+        }
+    }
+
+    public void Agir() {
+        if (habilidade != null) {
+            ativo.classe.UseHabilidade(ativo, habilidade, passivo);
+        }
+        else {
+            ativo.items.UseItem(item, passivo);
         }
     }
 

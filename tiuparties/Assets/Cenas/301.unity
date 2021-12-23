@@ -1021,7 +1021,7 @@ TextMesh:
   m_Font: {fileID: 12800000, guid: 905d74a4549da444b8cf843fe9024940, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4278191595
+    rgba: 4294967295
 --- !u!23 &233055909
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1731,7 +1731,9 @@ MonoBehaviour:
     nome: defarge
     hp: 218
     hpMax: 260
+    defesa: 0
     classe: {fileID: 471144131}
+    items: {fileID: 0}
   nomeMesh: {fileID: 1336962784}
 --- !u!114 &471144131
 MonoBehaviour:
@@ -1749,15 +1751,19 @@ MonoBehaviour:
   opsoes:
   - nome: attack
     custo: 0
+    metodo: 
     proximoIndice: 1
   - nome: defend
     custo: 0
+    metodo: 
     proximoIndice: 2
   - nome: commands
     custo: 0
+    metodo: 
     proximoIndice: 3
   - nome: items
     custo: 0
+    metodo: 
     proximoIndice: 3
   habilidades: []
 --- !u!1 &471906645
@@ -2143,7 +2149,9 @@ MonoBehaviour:
     nome: evremnd.
     hp: 74
     hpMax: 96
+    defesa: 0
     classe: {fileID: 530434578}
+    items: {fileID: 0}
   nomeMesh: {fileID: 2024740751}
 --- !u!114 &530434578
 MonoBehaviour:
@@ -2161,15 +2169,19 @@ MonoBehaviour:
   opsoes:
   - nome: attack
     custo: 0
+    metodo: 
     proximoIndice: 1
   - nome: defend
     custo: 0
+    metodo: 
     proximoIndice: 0
   - nome: magic
     custo: 0
+    metodo: 
     proximoIndice: 3
   - nome: items
     custo: 0
+    metodo: 
     proximoIndice: 3
   habilidades: []
 --- !u!1 &557732443
@@ -2317,29 +2329,12 @@ MonoBehaviour:
     nome: pross
     hp: 167
     hpMax: 184
+    defesa: 0
     classe: {fileID: 618259074}
+    items: {fileID: 1083844559}
   boxNome: {fileID: 352276157}
   boxesController: {fileID: 786270577}
   animator: {fileID: 618259075}
-  asao:
-    ativo:
-      nome: 
-      hp: 0
-      hpMax: 0
-      classe: {fileID: 0}
-    habilidade:
-      nome: 
-      custo: 0
-      proximoIndice: 0
-    item:
-      nome: 
-      quantidade: 0
-      proximoIndice: 0
-    passivo:
-      nome: 
-      hp: 0
-      hpMax: 0
-      classe: {fileID: 0}
 --- !u!114 &618259074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2356,25 +2351,32 @@ MonoBehaviour:
   opsoes:
   - nome: attack
     custo: 0
+    metodo: Attack
     proximoIndice: 2
   - nome: defend
     custo: 0
+    metodo: 
     proximoIndice: 0
   - nome: special
     custo: 0
+    metodo: 
     proximoIndice: 3
   - nome: items
     custo: 0
+    metodo: 
     proximoIndice: 4
   habilidades:
   - nome: counter
     custo: 5
+    metodo: 
     proximoIndice: 0
   - nome: charge
     custo: 0
+    metodo: 
     proximoIndice: 0
   - nome: berserk
     custo: 5
+    metodo: 
     proximoIndice: 0
 --- !u!95 &618259075
 Animator:
@@ -2953,7 +2955,9 @@ MonoBehaviour:
     nome: barsad
     hp: 112
     hpMax: 112
+    defesa: 0
     classe: {fileID: 787653036}
+    items: {fileID: 0}
   nomeMesh: {fileID: 1890704921}
 --- !u!114 &787653036
 MonoBehaviour:
@@ -2971,18 +2975,23 @@ MonoBehaviour:
   opsoes:
   - nome: attack
     custo: 0
+    metodo: 
     proximoIndice: 1
   - nome: defend
     custo: 0
+    metodo: 
     proximoIndice: 0
   - nome: skills
     custo: 0
+    metodo: 
     proximoIndice: 3
   - nome: items
     custo: 0
+    metodo: 
     proximoIndice: 3
   - nome: run
     custo: 0
+    metodo: 
     proximoIndice: 0
   habilidades: []
 --- !u!1 &838249207
@@ -4384,15 +4393,19 @@ MonoBehaviour:
   items:
   - nome: potion
     quantidade: 4
+    metodo: 
     proximoIndice: 1
   - nome: antidote
     quantidade: 4
+    metodo: 
     proximoIndice: 1
   - nome: bomb
     quantidade: 2
+    metodo: 
     proximoIndice: 2
   - nome: revive
     quantidade: 1
+    metodo: 
     proximoIndice: 1
   quantidade: 0
 --- !u!1 &1106401158
@@ -5131,7 +5144,9 @@ MonoBehaviour:
     nome: therese
     hp: 116
     hpMax: 188
+    defesa: 0
     classe: {fileID: 1340683203}
+    items: {fileID: 0}
   nomeMesh: {fileID: 301874174}
 --- !u!114 &1340683203
 MonoBehaviour:
@@ -5149,15 +5164,19 @@ MonoBehaviour:
   opsoes:
   - nome: attack
     custo: 0
+    metodo: 
     proximoIndice: 1
   - nome: defend
     custo: 0
+    metodo: 
     proximoIndice: 0
   - nome: special
     custo: 0
+    metodo: 
     proximoIndice: 3
   - nome: items
     custo: 0
+    metodo: 
     proximoIndice: 3
   habilidades: []
 --- !u!1 &1404080528
@@ -6688,29 +6707,12 @@ MonoBehaviour:
     nome: sydny.
     hp: 98
     hpMax: 115
+    defesa: 0
     classe: {fileID: 1844076842}
+    items: {fileID: 1083844559}
   boxNome: {fileID: 1404080528}
   boxesController: {fileID: 786270577}
   animator: {fileID: 1844076843}
-  asao:
-    ativo:
-      nome: 
-      hp: 0
-      hpMax: 0
-      classe: {fileID: 0}
-    habilidade:
-      nome: 
-      custo: 0
-      proximoIndice: 0
-    item:
-      nome: 
-      quantidade: 0
-      proximoIndice: 0
-    passivo:
-      nome: 
-      hp: 0
-      hpMax: 0
-      classe: {fileID: 0}
 --- !u!114 &1844076842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6727,31 +6729,40 @@ MonoBehaviour:
   opsoes:
   - nome: attack
     custo: 0
+    metodo: Attack
     proximoIndice: 2
   - nome: defend
     custo: 0
+    metodo: 
     proximoIndice: 0
   - nome: skills
     custo: 0
+    metodo: 
     proximoIndice: 3
   - nome: items
     custo: 0
+    metodo: 
     proximoIndice: 4
   - nome: run
     custo: 0
+    metodo: 
     proximoIndice: 0
   habilidades:
   - nome: invsblty
     custo: 5
+    metodo: 
     proximoIndice: 0
   - nome: detect
     custo: 2
+    metodo: 
     proximoIndice: 0
   - nome: sneak
     custo: 8
+    metodo: 
     proximoIndice: 2
   - nome: smoke
     custo: 5
+    metodo: 
     proximoIndice: 0
 --- !u!95 &1844076843
 Animator:
@@ -7543,29 +7554,12 @@ MonoBehaviour:
     nome: alex.
     hp: 26
     hpMax: 97
+    defesa: 0
     classe: {fileID: 1992308078}
+    items: {fileID: 1083844559}
   boxNome: {fileID: 82705930}
   boxesController: {fileID: 786270577}
   animator: {fileID: 1992308079}
-  asao:
-    ativo:
-      nome: 
-      hp: 0
-      hpMax: 0
-      classe: {fileID: 0}
-    habilidade:
-      nome: 
-      custo: 0
-      proximoIndice: 0
-    item:
-      nome: 
-      quantidade: 0
-      proximoIndice: 0
-    passivo:
-      nome: 
-      hp: 0
-      hpMax: 0
-      classe: {fileID: 0}
 --- !u!114 &1992308078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7582,28 +7576,36 @@ MonoBehaviour:
   opsoes:
   - nome: attack
     custo: 0
+    metodo: Attack
     proximoIndice: 2
   - nome: defend
     custo: 0
+    metodo: 
     proximoIndice: 0
   - nome: magic
     custo: 0
+    metodo: 
     proximoIndice: 3
   - nome: items
     custo: 0
+    metodo: 
     proximoIndice: 4
   habilidades:
   - nome: fire
     custo: 3
+    metodo: 
     proximoIndice: 2
   - nome: thunder
     custo: 5
+    metodo: 
     proximoIndice: 0
   - nome: cure
     custo: 2
+    metodo: 
     proximoIndice: 1
   - nome: haste
     custo: 3
+    metodo: 
     proximoIndice: 1
 --- !u!95 &1992308079
 Animator:
@@ -8028,29 +8030,12 @@ MonoBehaviour:
     nome: lucie
     hp: 212
     hpMax: 240
+    defesa: 0
     classe: {fileID: 2058830837}
+    items: {fileID: 1083844559}
   boxNome: {fileID: 905907879}
   boxesController: {fileID: 786270577}
   animator: {fileID: 2058830838}
-  asao:
-    ativo:
-      nome: 
-      hp: 0
-      hpMax: 0
-      classe: {fileID: 0}
-    habilidade:
-      nome: 
-      custo: 0
-      proximoIndice: 0
-    item:
-      nome: 
-      quantidade: 0
-      proximoIndice: 0
-    passivo:
-      nome: 
-      hp: 0
-      hpMax: 0
-      classe: {fileID: 0}
 --- !u!114 &2058830837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8067,22 +8052,28 @@ MonoBehaviour:
   opsoes:
   - nome: attack
     custo: 0
+    metodo: Attack
     proximoIndice: 2
   - nome: defend
     custo: 0
+    metodo: 
     proximoIndice: 1
   - nome: commands
     custo: 0
+    metodo: 
     proximoIndice: 3
   - nome: items
     custo: 0
+    metodo: 
     proximoIndice: 4
   habilidades:
   - nome: protect
     custo: 0
+    metodo: 
     proximoIndice: 0
   - nome: unite
     custo: 0
+    metodo: 
     proximoIndice: 0
 --- !u!95 &2058830838
 Animator:

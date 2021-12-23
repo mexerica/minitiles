@@ -11,8 +11,7 @@ public class CursorController : MonoBehaviour
     BoxesController boxesScript;
 
     //0=opsoes /1=aliados /2=inimigos
-    //3=habilidades /4=items
-    //5=descrisao /6=confirmar
+    //3=habilidades /4=items /5=descrisao /6=confirmar
     List<int> estagios = new List<int>{0};
 
     // guarda as opsoes escolhidas pelo jogador

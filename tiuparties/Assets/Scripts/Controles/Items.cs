@@ -24,6 +24,10 @@ public class Items : MonoBehaviour
         script.EscreverTextos();
     }
 
+    public void UseItem(Item itm, Personagem alvo) {
+
+    }
+
     void Start() {
         PreencherItems();
     }

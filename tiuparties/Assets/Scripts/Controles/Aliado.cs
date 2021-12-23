@@ -11,11 +11,17 @@ public class Aliado : MonoBehaviour
 
     [SerializeField] Animator animator;
 
-    public Asao asao;
+    Asao asao;
 
     void EscreverBoxStats() {
         boxNome.transform.GetChild(0).GetComponent<TextMesh>().text = personagem.nome;
-        boxNome.transform.GetChild(1).GetComponent<TextMesh>().text = personagem.hp + "/";
+        TextMesh hpAtual = boxNome.transform.GetChild(1).GetComponent<TextMesh>();
+        if (personagem.hp < personagem.hpMax * 0.25f)
+            hpAtual.color = new Color(235f/255f, 5f/255f, 0);
+        else
+            hpAtual.color = new Color(1f, 1f, 1f);
+        hpAtual.text = personagem.hp + "/";
+        
         boxNome.transform.GetChild(2).GetComponent<TextMesh>().text = personagem.hpMax.ToString();
     }
 
@@ -43,6 +49,25 @@ public class Aliado : MonoBehaviour
         // muda a cor da caixinha
         boxNome.GetComponent<SpriteRenderer>().color =
             new Color(1f, 1f, 1f);
+    }
+
+    public void SetAsao(Habilidade hblt, Personagem alvo) {
+        asao = new Asao(personagem, hblt, alvo);
+    }
+    public void SetAsao(Item itm, Personagem alvo) {
+        asao = new Asao(personagem, itm, alvo);
+    }
+
+    public void Agir() {
+        Debug.Log(asao);
+
+        asao.Agir();
+
+        asao = new Asao();
+    }
+
+    public void Apanhar() {
+        
     }
 
     void Start()

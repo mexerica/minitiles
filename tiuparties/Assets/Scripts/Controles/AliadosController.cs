@@ -10,17 +10,11 @@ public class AliadosController : MonoBehaviour
     public int atual;
 
     public void GuardarAsao(Habilidade hblt, Personagem passivo) {
-        personagemAtivo.asao = new Asao(
-            personagemAtivo.personagem, hblt, passivo
-        );
-        
+        personagemAtivo.SetAsao(hblt, passivo);
         SetProximoPersonagem();
     }
     public void GuardarAsao(Item itm, Personagem passivo) {
-        personagemAtivo.asao = new Asao(
-            personagemAtivo.personagem, itm, passivo
-        );
-
+        personagemAtivo.SetAsao(itm, passivo);
         SetProximoPersonagem();
     }
 
@@ -57,7 +51,7 @@ public class AliadosController : MonoBehaviour
 
     void TerminarTurno() {
         foreach (Aliado aliado in aliados.aliados) {
-            Debug.Log(aliado.asao);
+           aliado.Agir();
         }
 
         ComesarTurno();

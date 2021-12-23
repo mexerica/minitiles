@@ -12,6 +12,10 @@ public class Inimigo : MonoBehaviour
         nomeMesh.GetComponent<TextMesh>().text = personagem.nome;
     }
 
+    public void Apanhar() {
+        
+    }
+
     // Start is called before the first frame update
     void Start()
     {
