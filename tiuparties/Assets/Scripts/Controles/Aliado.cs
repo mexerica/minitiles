@@ -59,10 +59,7 @@ public class Aliado : MonoBehaviour
     }
 
     public void Agir() {
-        Debug.Log(asao);
-
         asao.Agir();
-
         asao = new Asao();
     }
 

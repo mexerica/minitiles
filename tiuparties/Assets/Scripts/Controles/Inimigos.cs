@@ -5,4 +5,6 @@ using UnityEngine;
 public class Inimigos : MonoBehaviour
 {
     public Inimigo[] inimigos;
+
+    public int quantidade;
 }

@@ -6,7 +6,7 @@ public class Items : MonoBehaviour
 {
     public Item[] items;
 
-    public int quantidade;
+    Personagem alvo;
 
     public void PreencherItems() {
         List<string> textos = new List<string>();
@@ -25,7 +25,30 @@ public class Items : MonoBehaviour
     }
 
     public void UseItem(Item itm, Personagem alvo) {
+        this.alvo = alvo;
 
+        Invoke(itm.metodo, 0);
+
+        itm.quantidade-=1;
+        PreencherItems();
+    }
+
+    void Potion() {
+        alvo.hp += 50;
+        Debug.Log("poção, de boa");
+    }
+
+    void Antidote() {
+        Debug.Log("sai veneno");
+    }
+
+    void Revive() {
+        Debug.Log("uma pá e uma ideia na cabeça");
+    }
+
+    void Bomb() {
+        alvo.hp -= 100;
+        Debug.Log("papara papara");
     }
 
     void Start() {

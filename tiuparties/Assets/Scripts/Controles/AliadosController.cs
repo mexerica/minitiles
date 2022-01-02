@@ -5,7 +5,9 @@ public class AliadosController : MonoBehaviour
 {
     public Aliados aliados;
 
-    [SerializeField] Aliado personagemAtivo;
+    [SerializeField] InimigosController inimigos;
+
+    Aliado personagemAtivo;
 
     public int atual;
 
@@ -42,7 +44,7 @@ public class AliadosController : MonoBehaviour
         }
     }
 
-    void ComesarTurno() {
+    public void ComesarTurno() {
         // vai ter q adicionar um teste pra ver se o char ta vivo
         atual = 0;
         personagemAtivo = aliados.aliados[atual].GetComponent<Aliado>();
@@ -54,7 +56,11 @@ public class AliadosController : MonoBehaviour
            aliado.Agir();
         }
 
-        ComesarTurno();
+        inimigos.MandarAgir();
+    }
+
+    public void TerminarBatalha() {
+
     }
 
     void Start()
